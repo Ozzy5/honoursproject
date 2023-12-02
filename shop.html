@@ -1,0 +1,1196 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SearchRelief - Shop</title>
+    <link rel="icon" type="image/x-icon" href="elements/SearchRelief.png">
+    <link rel="stylesheet" href="styles/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script type="text/javascript" src="javascript.js"></script>
+</head>
+
+<body>
+<main>
+<!--NavBar Mobile View (Start)-->
+    <div class="mobile-container">
+        <div class="topnav">
+            <a href="index.html">
+                <img src="elements/SearchRelief.png" alt="SearchReliefLogo" class="mobileLogo" width="65">
+            </a>
+            <div id="myLinks">
+                <a href="shop.html">SHOP</a>
+                <a href="fundraise.html">FUNDRAISE</a>
+                <a href="volunteer.html">VOLUNTEER</a>
+                <a href="donate.html">DONATE</a>
+            </div>
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                <i class="fa fa-bars"></i>
+            </a>
+        </div>
+    </div>
+<!--NavBar Mobile View (End)-->
+
+<!--NavBar Window View (Start)-->
+    <section class="navBar">
+        <div class="leftNav">
+            <a href="index.html">
+            <img src="elements/SearchRelief.png" alt="SearchReliefLogo" width="45" class="topleftIcon">
+            </a>
+        </div>
+
+        <div class="middleNav">
+            <img class="backgroundLogo" src="elements/SearchReliefFADE.png" alt="SearchReliefLogo" width="250">
+            <nav class="nav">
+                <a href="index.html">HOME</a>
+                <a href="shop.html" class="dropbtn" id="shop">SHOP</a>
+                <a href="fundraise.html">FUNDRAISE</a>
+                <a href="volunteer.html">VOLUNTEER</a>
+                <a href="donate.html">DONATE</a>
+            </nav>
+        </div>
+
+<!--NavBar Shop 1440px View (Start)-->
+<div class="middleNavMacScreen">
+    <img class="backgroundLogo" src="elements/SearchReliefFADE.png" alt="SearchReliefLogo" width="250">
+    <nav class="nav">
+        <a href="index.html">HOME</a>
+        <a href="shop.html" class="home">SHOP</a>
+        <a href="fundraise.html">FUNDRAISE</a>
+        <a href="volunteer.html">VOLUNTEER</a>
+        <a href="donate.html">DONATE</a>
+    </nav>
+</div>
+<!--NavBar Shop 1440px View (End)-->
+        <div class="rightNav">
+        </div>
+    </section>
+<!--NavBar Window View (End)-->
+
+<!--Search Bar (Start)-->
+    <div class="topnav">
+        <script async src="https://cse.google.com/cse.js?cx=821bd4c5cd4114cfa">
+        </script>
+        <div class="gcse-search"></div>
+    </div>
+<!--Search Bar (End)-->
+
+<!--Shop Section-->
+<div class="shopSection">
+<h2 class="filtermainHeader">Filter your search</h2>
+
+    <!--Show All Button-->
+    <div class="btnActive">
+    <button class="btn active" onclick="filterSelection('all')">SHOW ALL</button>
+    </div>
+    <!--Shop Filter Buttons-->
+    <div id="myBtnContainer">
+        <div class="mensItems">
+        <h3>MEN</h3>
+        <button class="btn" onclick="filterSelection('tshirtsMen')">T-Shirts</button>
+        <button class="btn" onclick="filterSelection('hoodieMen')">Hoodies</button>
+        <button class="btn" onclick="filterSelection('shoesMen')">Shoes</button>
+        <h3>ACCESSORIES</h3>
+        <button class="btn" onclick="filterSelection('hatsMen')">Hats</button>
+        <button class="btn" onclick="filterSelection('scarfsMen')">Scarfs</button>
+        </div>
+
+        <div class="womensItems">
+        <h3>WOMEN</h3>
+        <button class="btn" onclick="filterSelection('tshirtsWomen')">T-Shirts</button>
+        <button class="btn" onclick="filterSelection('hoodieWomen')">Hoodies</button>
+        <button class="btn" onclick="filterSelection('shoesWomen')">Shoes</button>
+        <h3>ACCESSORIES</h3>
+        <button class="btn" onclick="filterSelection('hatsWomen')">Hats</button>
+        <button class="btn" onclick="filterSelection('scarfsWomen')">Scarfs</button>
+        <button class="btn" onclick="filterSelection('jewelleryWomen')">Jewellery</button>
+        </div>
+
+        <div class="unisexItems">
+        <h3>UNISEX</h3>
+        <button class="btn" onclick="filterSelection('tshirtsUnisex')">T-Shirts</button>
+        <button class="btn" onclick="filterSelection('hoodieUnisex')">Hoodies</button>
+        <button class="btn" onclick="filterSelection('shoesUnisex')">Shoes</button>
+        <h3>ACCESSORIES</h3>
+        <button class="btn" onclick="filterSelection('hatsUnisex')">Hats</button>
+        <button class="btn" onclick="filterSelection('scarfsUnisex')">Scarfs</button>
+        <button class="btn" onclick="filterSelection('jewelleryUnisex')">Jewellery</button>
+        </div>
+
+        <div class="furniture">
+        <h3>FURNITURE</h3>
+        <button class="btn" onclick="filterSelection('table')">Table</button>
+        <button class="btn" onclick="filterSelection('sofas')">Sofas</button>
+        <button class="btn" onclick="filterSelection('chairs')">Chairs</button>
+        <button class="btn" onclick="filterSelection('wardrobes')">Wardrobes</button>
+        </div>
+
+        <div class="entertainment">
+        <h3>ENTERTAINMENT</h3>
+        <button class="btn" onclick="filterSelection('books')">Books</button>
+        <button class="btn" onclick="filterSelection('stuffedanimals')">Stuffed Animals</button>
+        </div>
+
+        <div class="other">
+        <h3>OTHER</h3>
+        <button class="btn" onclick="filterSelection('cards')">Cards</button>
+        <button class="btn" onclick="filterSelection('pins')">Pins</button>
+        <button class="btn" onclick="filterSelection('bags')">Bags</button>
+        </div>
+    </div>
+
+    <!--Shop Content Images and Text-->
+    <div class="row">
+        <div class="column tshirtsMen">
+            <div class="content">
+                <a href="https://www.alzscot.shop/products/scotlands-memory-walk-adult-t-shirt" class="contentShopHyperlink">
+                <img src="elements/AlzheimersScotland Items/unisex clothing/MemoryWalkT-Shirt.PNG" alt="Purple Tshirt" width="293" height="293">
+                <figcaption class="imgShopTxt">T-Shirt | Purple | Alzheimer Scotland</figcaption>
+                </a>
+                <a href="https://www.alzscot.shop/products/scotlands-memory-walk-adult-t-shirt" class="contentShopHyperlink">
+                <button class="buyBtn">Buy</button>
+                </a>
+            </div>
+        </div>
+        <div class="column hatsWomen">
+            <div class="content">
+                <a href="https://shop.macmillan.org.uk/products/macmillan-bucket-hat" class="contentShopHyperlink">
+                <img src="elements/MacMillan Items/white-bucket-hat.PNG" alt="Bucket Hat" width="293" height="293">
+                <figcaption class="imgShopTxt">Hat | White | MacMillan Cancer Support</figcaption>
+                </a>
+                <a href="https://shop.macmillan.org.uk/products/macmillan-bucket-hat" class="contentShopHyperlink">
+                <button class="buyBtn">Buy</button>
+                </a>
+            </div>
+        </div>
+        <div class="column shoesWomen">
+            <div class="content">
+                <a href="https://www.ebay.co.uk/itm/225493484320?hash=item3480758320:g:ojwAAOSw-NpkHYUl" class="contentShopHyperlink">
+                <img src="elements/Cancer Research Items/womans-black-boots.png" alt="Black Boots" width="293" height="293">
+                <figcaption class="imgShopTxt">Shoes | Black | Cancer Research UK</figcaption>
+                </a>
+                <a href="https://www.ebay.co.uk/itm/225493484320?hash=item3480758320:g:ojwAAOSw-NpkHYUl" class="contentShopHyperlink">
+                <button class="buyBtn">Buy</button>
+                </a>
+            </div>
+        </div>
+        <div class="column tshirtsWomen">
+            <div class="content">
+                <a href="https://shop.wwf.org.uk/products/ben-rothery-t-shirts" class="contentShopHyperlink">
+                <img src="elements/WWF/BenRotheryTshirt.PNG" alt="Ben Rothery Tshirt" width="293" height="293">
+                <figcaption class="imgShopTxt">T-Shirt | White | WWF</figcaption>
+                </a>
+                <a href="https://shop.wwf.org.uk/products/ben-rothery-t-shirts" class="contentShopHyperlink">
+                <button class="buyBtn">Buy</button>
+                </a>
+            </div>
+        </div>
+        <div class="column hoodieMen">
+            <div class="content">
+                <a href="https://shop.gosh.org/products/washed-black-hoodie" class="contentShopHyperlink">
+                <img src="elements/GOSHFC Items/mens-grey-hoodie.png" alt="Grey Hoodie" width="293" height="293">
+                <figcaption class="imgShopTxt">Hoodie | Grey | GOSHFC</figcaption>
+                </a>
+                <a href="https://shop.gosh.org/products/washed-black-hoodie" class="contentShopHyperlink">
+                <button class="buyBtn">Buy</button>
+                </a>
+            </div>
+        </div>
+        <div class="column pins">
+            <div class="content">
+                <a href="https://www.poppyshop.org.uk/products/2023-dated-poppy-lapel-pin-3" class="contentShopHyperlink">
+                <img src="elements/Royal British Legion Items/poppypin.PNG" alt="Poppy Pin" width="293" height="293">
+                <figcaption class="imgShopTxt">Pin | Poppy | Royal British Legion</figcaption>
+                </a>
+                <a href="https://www.poppyshop.org.uk/products/2023-dated-poppy-lapel-pin-3" class="contentShopHyperlink">
+                <button class="buyBtn">Buy</button>
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="column tshirtsMen">
+            <div class="content">
+                <a href="https://shop.helpforheroes.org.uk/collections/mens-polos-shirts/products/navy-neptune-union-jack-sleeve-polo-1" class="contentShopHyperlink">
+                <img src="elements/Help for Heroes Items/navy_blue_union_jack_polo.PNG" alt="Union Jack Polo" width="293" height="293">
+                <figcaption class="imgShopTxt">Polo Shirt | Navy Blue | Help for Heroes</figcaption>
+                </a>
+                <a href="https://shop.helpforheroes.org.uk/collections/mens-polos-shirts/products/navy-neptune-union-jack-sleeve-polo-1" class="contentShopHyperlink">
+                <button class="buyBtn">Buy</button>
+                </a>
+            </div>
+        </div>
+        <div class="column tshirtsUnisex">
+            <div class="content">
+                <a href="https://giftshop.redcross.org.uk/collections/all-clothing/products/love-is-love-unisex-white-t-shirt" class="contentShopHyperlink">
+                <img src="elements/BRC Items/loveitlovetshirt.PNG" alt="Love is Love Tshirt" width="293" height="293">
+                <figcaption class="imgShopTxt">T-Shirt | White | British Red Cross</figcaption>
+                </a>
+                <a href="https://giftshop.redcross.org.uk/collections/all-clothing/products/love-is-love-unisex-white-t-shirt" class="contentShopHyperlink">
+                <button class="buyBtn">Buy</button>
+                </a>
+            </div>
+        </div>
+        <div class="column hatsMen">
+            <div class="content">
+                <a href="https://shop.helpforheroes.org.uk/collections/hats-and-scarves/products/navy-essential-logo-baseball-cap" class="contentShopHyperlink">
+                <img src="elements/Help for Heroes Items/Essential Baseball Cap.PNG" alt="Baseball Cap" width="293" height="293">
+                <figcaption class="imgShopTxt">Hat | Navy Blue | Help for Heroes</figcaption>
+                </a>
+                <a href="https://shop.helpforheroes.org.uk/collections/hats-and-scarves/products/navy-essential-logo-baseball-cap" class="contentShopHyperlink">
+                <button class="buyBtn">Buy</button>
+                </a>
+            </div>
+        </div>
+        <div class="column shoesWomen">
+            <div class="content">
+                <a href="https://www.ebay.co.uk/itm/185830516811?hash=item2b445ca84b:g:BqcAAOSwcEtkF1~i" class="contentShopHyperlink">
+                <img src="elements/BRC Items/blackboots.jpg" alt="Black Boots" width="293" height="293">
+                <figcaption class="imgShopTxt">Shoes | Black | British Red Cross</figcaption>
+                </a>
+                <a href="https://www.ebay.co.uk/itm/185830516811?hash=item2b445ca84b:g:BqcAAOSwcEtkF1~i" class="contentShopHyperlink">
+                <button class="buyBtn">Buy</button>
+                </a>
+            </div>
+        </div>
+        <div class="column hatsUnisex">
+            <div class="content">
+                <a href="https://www.bbcchildreninneedshop.co.uk/products/2021-Pudsey-Ears" class="contentShopHyperlink">
+                <img src="elements/Children In Need Items/childreninneed items/ClassicPudseyEarsYellow.png" alt="Pudsey Ears" width="293" height="293">
+                <figcaption class="imgShopTxt">Hat | Yellow | Children in Need</figcaption>
+                </a>
+                <a href="https://www.bbcchildreninneedshop.co.uk/products/2021-Pudsey-Ears" class="contentShopHyperlink">
+                <button class="buyBtn">Buy</button>
+                </a>
+            </div>
+        </div>
+        <div class="column table">
+            <div class="content">
+                <a href="https://www.ebay.co.uk/itm/385523390561?hash=item59c2fc1861:g:UdQAAOSwSd1kKzHM" class="contentShopHyperlink">
+                <img src="elements/BHF Clothing/brown desk table.jpg" alt="Desk Table" width="293" height="293">
+                <figcaption class="imgShopTxt">Table | Brown | British Heart Foundation</figcaption>
+                </a>
+                <a href="https://www.ebay.co.uk/itm/385523390561?hash=item59c2fc1861:g:UdQAAOSwSd1kKzHM" class="contentShopHyperlink">
+                <button class="buyBtn">Buy</button>
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="column jewelleryUnisex">
+            <div class="content">
+                <a href="https://www.poppyshop.org.uk/products/bee-and-poppy-stud-earrings" class="contentShopHyperlink">
+                <img src="elements/Royal British Legion Items/poppy earrings.PNG" alt="Poppy Earrings" width="293" height="293">
+                <figcaption class="imgShopTxt">Jewellery | Earrings | Royal British Legion</figcaption>
+                </a>
+                <a href="https://www.poppyshop.org.uk/products/bee-and-poppy-stud-earrings" class="contentShopHyperlink">
+                <button class="buyBtn">Buy</button>
+                </a>
+            </div>
+        </div>
+        <div class="column tshirtsUnisex">
+            <div class="content">
+                <a href="https://www.bbcchildreninneedshop.co.uk/products/22-official-tee-adult-yellow" class="contentShopHyperlink">
+                <img src="elements/Children In Need Items/childreninneed items/Yellow tshirt.png" alt="Yellow Tshirt" width="293" height="293">
+                <figcaption class="imgShopTxt">T-Shirt | Yellow | Children in Need</figcaption>
+                </a>
+                <a href="https://www.bbcchildreninneedshop.co.uk/products/22-official-tee-adult-yellow" class="contentShopHyperlink">
+                <button class="buyBtn">Buy</button>
+                </a>
+            </div>
+        </div>
+        <div class="column books">
+            <div class="content">
+                <a href="https://shop.macmillan.org.uk/collections/books-games/products/the-green-kitchen-cookery-book" class="contentShopHyperlink">
+                <img src="elements/MacMillan Items/macmillan book.jpg" alt="The Green Kitchen Book" width="293" height="293">
+                <figcaption class="imgShopTxt">Book | The Green Kitchen | MacMillan Cancer Support</figcaption>
+                </a>
+                <a href="https://shop.macmillan.org.uk/collections/books-games/products/the-green-kitchen-cookery-book" class="contentShopHyperlink">
+                <button class="buyBtn">Buy</button>
+                </a>
+            </div>
+        </div>
+        <div class="column bags">
+            <div class="content">
+                <a href="https://shop.macmillan.org.uk/collections/all-gifts/products/rainbow-tote-bag-due-3rd-july" class="contentShopHyperlink">
+                <img src="elements/MacMillan Items/rainbow bag.PNG" alt="Rainbow Bag" width="293" height="293">
+                <figcaption class="imgShopTxt">Bag | Rainbow | MacMillan Cancer Support</figcaption>
+                </a>
+                <a href="https://shop.macmillan.org.uk/collections/all-gifts/products/rainbow-tote-bag-due-3rd-july" class="contentShopHyperlink">
+                <button class="buyBtn">Buy</button>
+                </a>
+            </div>
+        </div>
+        <div class="column pins">
+            <div class="content">
+                <a href="https://shop.gosh.org/products/gosh-logo-pin-badge" class="contentShopHyperlink">
+                <img src="elements/GOSHFC Items/goshfc pin.PNG" alt="Pin" width="293" height="293">
+                <figcaption class="imgShopTxt">Pin | GOSHFC Logo | GOSHFC</figcaption>
+                </a>
+                <a href="https://shop.gosh.org/products/gosh-logo-pin-badge" class="contentShopHyperlink">
+                <button class="buyBtn">Buy</button>
+                </a>
+            </div>
+        </div>
+        <div class="column scarfsUnisex">
+            <div class="content">
+                <a href="https://www.alzscot.shop/products/tartan-scarf" class="contentShopHyperlink">
+                <img src="elements/AlzheimersScotland Items/unisex clothing/tarten scarf.PNG" alt="Tarten Scarf" width="293" height="293">
+                <figcaption class="imgShopTxt">Scarf | Unisex | Alzheimer Scotland</figcaption>
+                </a>
+                <a href="https://www.alzscot.shop/products/tartan-scarf" class="contentShopHyperlink">
+                <button class="buyBtn">Buy</button>
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="column chairs">
+            <div class="content">
+                <a href="https://www.ebay.co.uk/itm/385523496147?hash=item59c2fdb4d3:g:YlMAAOSw9yJkJHhu" class="contentShopHyperlink">
+                <img src="elements/BHF Clothing/chair.jpg" alt="Chair" width="293" height="293">
+                <figcaption class="imgShopTxt">Chair | Brown | British Heart Foundation</figcaption>
+                </a>
+                <a href="https://www.ebay.co.uk/itm/385523496147?hash=item59c2fdb4d3:g:YlMAAOSw9yJkJHhu" class="contentShopHyperlink">
+                <button class="buyBtn">Buy</button>
+                </a>
+            </div>
+        </div>
+        <div class="column stuffedanimals">
+            <div class="content">
+                <a href="https://shop.gosh.org/products/bernard-bear" class="contentShopHyperlink">
+                <img src="elements/GOSHFC Items/stuffed bear.PNG" alt="Stuffed Bear" width="293" height="293">
+                <figcaption class="imgShopTxt">Stuffed Animals | Bear | GOSHFC</figcaption>
+                </a>
+                <a href="https://shop.gosh.org/products/bernard-bear" class="contentShopHyperlink">
+                <button class="buyBtn">Buy</button>
+                </a>
+            </div>
+        </div>
+        <div class="column sofas">
+            <div class="content">
+                <a href="https://www.ebay.co.uk/itm/374606081833?hash=item5738432f29:g:n6oAAOSwZGtkLAw-" class="contentShopHyperlink">
+                <img src="elements/BHF Clothing/sofas.jpg" alt="Sofas" width="293" height="293">
+                <figcaption class="imgShopTxt">Sofas | Black | British Heart Foundation</figcaption>
+                </a>
+                <a href="https://www.ebay.co.uk/itm/374606081833?hash=item5738432f29:g:n6oAAOSwZGtkLAw-" class="contentShopHyperlink">
+                <button class="buyBtn">Buy</button>
+                </a>
+            </div>
+        </div>
+        <div class="column hatsUnisex">
+            <div class="content">
+                <a href="https://guidedogsshop.com/collections/accessories-1/products/guide-dogs-baseball-cap" class="contentShopHyperlink">
+                <img src="elements/Guide Dogs Items/guidedoghat.PNG" alt="Guide Dog's Hat" width="293" height="293">
+                <figcaption class="imgShopTxt">Hat | Navy Blue | Guide Dogs</figcaption>
+                </a>
+                <a href="https://guidedogsshop.com/collections/accessories-1/products/guide-dogs-baseball-cap" class="contentShopHyperlink">
+                <button class="buyBtn">Buy</button>
+                </a>
+            </div>
+        </div>
+        <div class="column wardrobes">
+            <div class="content">
+                <a href="https://www.ebay.co.uk/itm/385525888080?hash=item59c3223450:g:THQAAOSwJENkLHZF" class="contentShopHyperlink">
+                <img src="elements/BHF Clothing/wardrobe.jpg" alt="Wardrobe" width="293" height="293">
+                <figcaption class="imgShopTxt">Wardrobe | Brown | British Heart Foundation</figcaption>
+                </a>
+                <a href="https://www.ebay.co.uk/itm/385525888080?hash=item59c3223450:g:THQAAOSwJENkLHZF" class="contentShopHyperlink">
+                <button class="buyBtn">Buy</button>
+                </a>
+            </div>
+        </div>
+        <div class="column cards">
+            <div class="content">
+                <a href="https://shop.woodlandtrust.org.uk/woodland-trust-cooler-months-notecards" class="contentShopHyperlink">
+                <img src="elements/Woodland Trust Items/cards.jpeg" alt="Cards" width="293" height="293">
+                <figcaption class="imgShopTxt">Cards | Animals | Woodland Trust</figcaption>
+                </a>
+                <a href="https://shop.woodlandtrust.org.uk/woodland-trust-cooler-months-notecards" class="contentShopHyperlink">
+                <button class="buyBtn">Buy</button>
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--Shop Section (Small Window View)-->
+<div class="shopSectionSmallWindow">
+<h2 class="filtermainHeader">Filter your search</h2>
+
+    <!--Show All Button-->
+    <div class="btnActive">
+    <button class="btn active" onclick="filterSelection('all')">SHOW ALL</button>
+    </div>
+    <!--Shop Filter Buttons-->
+    <div id="myBtnContainer">
+        <div class="mensItems">
+        <h3>MEN</h3>
+        <!--<button class="btn active" onclick="filterSelection('all')">Show All</button>-->
+        <button class="btn" onclick="filterSelection('tshirtsMen')">T-Shirts</button>
+        <button class="btn" onclick="filterSelection('hoodieMen')">Hoodies</button>
+        <button class="btn" onclick="filterSelection('shoesMen')">Shoes</button>
+        <h3>ACCESSORIES</h3>
+        <button class="btn" onclick="filterSelection('hatsMen')">Hats</button>
+        <button class="btn" onclick="filterSelection('scarfsMen')">Scarfs</button>
+        </div>
+
+        <div class="womensItems">
+        <h3>WOMEN</h3>
+        <!--<button class="btn active" onclick="filterSelection('all')">Show All</button>-->
+        <button class="btn" onclick="filterSelection('tshirtsWomen')">T-Shirts</button>
+        <button class="btn" onclick="filterSelection('hoodieWomen')">Hoodies</button>
+        <button class="btn" onclick="filterSelection('shoesWomen')">Shoes</button>
+        <h3>ACCESSORIES</h3>
+        <button class="btn" onclick="filterSelection('hatsWomen')">Hats</button>
+        <button class="btn" onclick="filterSelection('scarfsWomen')">Scarfs</button>
+        <button class="btn" onclick="filterSelection('jewelleryWomen')">Jewellery</button>
+        </div>
+
+        <div class="unisexItems">
+        <h3>UNISEX</h3>
+        <!--<button class="btn active" onclick="filterSelection('all')">Show All</button>-->
+        <button class="btn" onclick="filterSelection('tshirtsUnisex')">T-Shirts</button>
+        <button class="btn" onclick="filterSelection('hoodieUnisex')">Hoodies</button>
+        <button class="btn" onclick="filterSelection('shoesUnisex')">Shoes</button>
+        <h3>ACCESSORIES</h3>
+        <button class="btn" onclick="filterSelection('hatsUnisex')">Hats</button>
+        <button class="btn" onclick="filterSelection('scarfsUnisex')">Scarfs</button>
+        <button class="btn" onclick="filterSelection('jewelleryUnisex')">Jewellery</button>
+        </div>
+
+        <div class="furniture">
+        <h3>FURNITURE</h3>
+        <!--<button class="btn active" onclick="filterSelection('all')">Show All</button>-->
+        <button class="btn" onclick="filterSelection('table')">Table</button>
+        <button class="btn" onclick="filterSelection('sofas')">Sofas</button>
+        <button class="btn" onclick="filterSelection('chairs')">Chairs</button>
+        <button class="btn" onclick="filterSelection('wardrobes')">Wardrobes</button>
+        </div>
+
+        <div class="entertainment">
+        <h3>ENTERTAINMENT</h3>
+        <!--<button class="btn active" onclick="filterSelection('all')">Show All</button>-->
+        <button class="btn" onclick="filterSelection('books')">Books</button>
+        <button class="btn" onclick="filterSelection('stuffedanimals')">Stuffed Animals</button>
+        </div>
+
+        <div class="other">
+        <h3>OTHER</h3>
+        <!--<button class="btn active" onclick="filterSelection('all')">Show All</button>-->
+        <button class="btn" onclick="filterSelection('cards')">Cards</button>
+        <button class="btn" onclick="filterSelection('pins')">Pins</button>
+        <button class="btn" onclick="filterSelection('bags')">Bags</button>
+        </div>
+    </div>
+
+    <!--Shop Content Images and Text-->
+    <div class="rowSW">
+        <div class="column tshirtsMen">
+            <div class="content">
+                <a href="https://www.alzscot.shop/products/scotlands-memory-walk-adult-t-shirt" class="contentShopHyperlink">
+                <img src="elements/AlzheimersScotland Items/unisex clothing/MemoryWalkT-Shirt.PNG" alt="Memory Walk Tshirt" width="293" height="293">
+                <figcaption class="imgShopTxt">T-Shirt | Purple | Alzheimer Scotland</figcaption>
+                </a>
+                <a href="https://www.alzscot.shop/products/scotlands-memory-walk-adult-t-shirt" class="contentShopHyperlink">
+                <button class="buyBtn">Buy</button>
+                </a>
+            </div>
+        </div>
+        <div class="column hatsWomen">
+            <div class="content">
+                <a href="https://shop.macmillan.org.uk/products/macmillan-bucket-hat" class="contentShopHyperlink">
+                <img src="elements/MacMillan Items/white-bucket-hat.PNG" alt="Bucket Hat" width="293" height="293">
+                <figcaption class="imgShopTxt">Hat | White | MacMillan Cancer Support</figcaption>
+                </a>
+                <a href="https://shop.macmillan.org.uk/products/macmillan-bucket-hat" class="contentShopHyperlink">
+                <button class="buyBtn">Buy</button>
+                </a>
+            </div>
+        </div>
+        <div class="column shoesWomen">
+            <div class="content">
+                <a href="https://www.ebay.co.uk/itm/225493484320?hash=item3480758320:g:ojwAAOSw-NpkHYUl" class="contentShopHyperlink">
+                <img src="elements/Cancer Research Items/womans-black-boots.png" alt="Black Boots" width="293" height="293">
+                <figcaption class="imgShopTxt">Shoes | Black | Cancer Research UK</figcaption>
+                </a>
+                <a href="https://www.ebay.co.uk/itm/225493484320?hash=item3480758320:g:ojwAAOSw-NpkHYUl" class="contentShopHyperlink">
+                <button class="buyBtn">Buy</button>
+                </a>
+            </div>
+        </div>
+        <div class="column tshirtsWomen">
+            <div class="content">
+                <a href="https://shop.wwf.org.uk/products/ben-rothery-t-shirts" class="contentShopHyperlink">
+                <img src="elements/WWF/BenRotheryTshirt.PNG" alt="Ben Rothery Tshirt" width="293" height="293">
+                <figcaption class="imgShopTxt">T-Shirt | White | WWF</figcaption>
+                </a>
+                <a href="https://shop.wwf.org.uk/products/ben-rothery-t-shirts" class="contentShopHyperlink">
+                <button class="buyBtn">Buy</button>
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="rowSW">
+        <div class="column hoodieMen">
+            <div class="content">
+                <a href="https://shop.gosh.org/products/washed-black-hoodie" class="contentShopHyperlink">
+                <img src="elements/GOSHFC Items/mens-grey-hoodie.png" alt="Grey Hoodie" width="293" height="293">
+                <figcaption class="imgShopTxt">Hoodie | Grey | GOSHFC</figcaption>
+                </a>
+                <a href="https://shop.gosh.org/products/washed-black-hoodie" class="contentShopHyperlink">
+                <button class="buyBtn">Buy</button>
+                </a>
+            </div>
+        </div>
+        <div class="column pins">
+            <div class="content">
+                <a href="https://www.poppyshop.org.uk/products/2023-dated-poppy-lapel-pin-3" class="contentShopHyperlink">
+                <img src="elements/Royal British Legion Items/poppypin.PNG" alt="Poppy Pin" width="293" height="293">
+                <figcaption class="imgShopTxt">Pin | Poppy | Royal British Legion</figcaption>
+                </a>
+                <a href="https://www.poppyshop.org.uk/products/2023-dated-poppy-lapel-pin-3" class="contentShopHyperlink">
+                <button class="buyBtn">Buy</button>
+                </a>
+            </div>
+        </div>
+        <div class="column tshirtsMen">
+            <div class="content">
+                <a href="https://shop.helpforheroes.org.uk/collections/mens-polos-shirts/products/navy-neptune-union-jack-sleeve-polo-1" class="contentShopHyperlink">
+                <img src="elements/Help for Heroes Items/navy_blue_union_jack_polo.PNG" alt="Union Jack Polo" width="293" height="293">
+                <figcaption class="imgShopTxt">Polo Shirt | Navy Blue | Help for Heroes</figcaption>
+                </a>
+                <a href="https://shop.helpforheroes.org.uk/collections/mens-polos-shirts/products/navy-neptune-union-jack-sleeve-polo-1" class="contentShopHyperlink">
+                <button class="buyBtn">Buy</button>
+                </a>
+            </div>
+        </div>
+        <div class="column tshirtsUnisex">
+            <div class="content">
+                <a href="https://giftshop.redcross.org.uk/collections/all-clothing/products/love-is-love-unisex-white-t-shirt" class="contentShopHyperlink">
+                <img src="elements/BRC Items/loveitlovetshirt.PNG" alt="Love is Love Tshirt" width="293" height="293">
+                <figcaption class="imgShopTxt">T-Shirt | White | British Red Cross</figcaption>
+                </a>
+                <a href="https://giftshop.redcross.org.uk/collections/all-clothing/products/love-is-love-unisex-white-t-shirt" class="contentShopHyperlink">
+                <button class="buyBtn">Buy</button>
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="rowSW">
+        <div class="column hatsMen">
+            <div class="content">
+                <a href="https://shop.helpforheroes.org.uk/collections/hats-and-scarves/products/navy-essential-logo-baseball-cap" class="contentShopHyperlink">
+                    <img src="elements/Help for Heroes Items/Essential Baseball Cap.PNG" alt="Purple Tee" width="293" height="293">
+                    <figcaption class="imgShopTxt">Hat | Navy Blue | Help for Heroes</figcaption>
+                    </a>
+                    <a href="https://shop.helpforheroes.org.uk/collections/hats-and-scarves/products/navy-essential-logo-baseball-cap" class="contentShopHyperlink">
+                    <button class="buyBtn">Buy</button>
+                    </a>
+            </div>
+        </div>
+        <div class="column shoesWomen">
+            <div class="content">
+                <a href="https://www.ebay.co.uk/itm/185830516811?hash=item2b445ca84b:g:BqcAAOSwcEtkF1~i" class="contentShopHyperlink">
+                <img src="elements/BRC Items/blackboots.jpg" alt="Black Boots" width="293" height="293">
+                <figcaption class="imgShopTxt">Shoes | Black | British Red Cross</figcaption>
+                </a>
+                <a href="https://www.ebay.co.uk/itm/185830516811?hash=item2b445ca84b:g:BqcAAOSwcEtkF1~i" class="contentShopHyperlink">
+                <button class="buyBtn">Buy</button>
+                </a>
+            </div>
+        </div>
+        <div class="column hatsUnisex">
+            <div class="content">
+                <a href="https://www.bbcchildreninneedshop.co.uk/products/2021-Pudsey-Ears" class="contentShopHyperlink">
+                    <img src="elements/Children In Need Items/childreninneed items/ClassicPudseyEarsYellow.png" alt="Pudsey Ears" width="293" height="293">
+                    <figcaption class="imgShopTxt">Hat | Yellow | Children in Need</figcaption>
+                    </a>
+                    <a href="https://www.bbcchildreninneedshop.co.uk/products/2021-Pudsey-Ears" class="contentShopHyperlink">
+                    <button class="buyBtn">Buy</button>
+                    </a>
+            </div>
+        </div>
+        <div class="column table">
+            <div class="content">
+                <a href="https://www.ebay.co.uk/itm/385523390561?hash=item59c2fc1861:g:UdQAAOSwSd1kKzHM" class="contentShopHyperlink">
+                    <img src="elements/BHF Clothing/brown desk table.jpg" alt="Desk Table" width="293" height="293">
+                    <figcaption class="imgShopTxt">Table | Brown | British Heart Foundation</figcaption>
+                    </a>
+                    <a href="https://www.ebay.co.uk/itm/385523390561?hash=item59c2fc1861:g:UdQAAOSwSd1kKzHM" class="contentShopHyperlink">
+                    <button class="buyBtn">Buy</button>
+                    </a>
+            </div>
+        </div>
+    </div>
+    <div class="rowSW">
+        <div class="column jewelleryUnisex">
+            <div class="content">
+                <a href="https://www.poppyshop.org.uk/products/bee-and-poppy-stud-earrings" class="contentShopHyperlink">
+                    <img src="elements/Royal British Legion Items/poppy earrings.PNG" alt="Poppy Earrings" width="293" height="293">
+                    <figcaption class="imgShopTxt">Jewellery | Earrings | Royal British Legion</figcaption>
+                    </a>
+                    <a href="https://www.poppyshop.org.uk/products/bee-and-poppy-stud-earrings" class="contentShopHyperlink">
+                    <button class="buyBtn">Buy</button>
+                    </a>
+            </div>
+        </div>
+        <div class="column tshirtsUnisex">
+            <div class="content">
+                <a href="https://www.bbcchildreninneedshop.co.uk/products/22-official-tee-adult-yellow" class="contentShopHyperlink">
+                    <img src="elements/Children In Need Items/childreninneed items/Yellow tshirt.png" alt="Yellow Tshirt" width="293" height="293">
+                    <figcaption class="imgShopTxt">T-Shirt | Yellow | Children in Need</figcaption>
+                    </a>
+                    <a href="https://www.bbcchildreninneedshop.co.uk/products/22-official-tee-adult-yellow" class="contentShopHyperlink">
+                    <button class="buyBtn">Buy</button>
+                    </a>
+            </div>
+        </div>
+        <div class="column books">
+            <div class="content">
+                <a href="https://shop.macmillan.org.uk/collections/books-games/products/the-green-kitchen-cookery-book" class="contentShopHyperlink">
+                    <img src="elements/MacMillan Items/macmillan book.jpg" alt="The Green Kitchen Book" width="293" height="293">
+                    <figcaption class="imgShopTxt">Book | The Green Kitchen | MacMillan</figcaption>
+                    </a>
+                    <a href="https://shop.macmillan.org.uk/collections/books-games/products/the-green-kitchen-cookery-book" class="contentShopHyperlink">
+                    <button class="buyBtn">Buy</button>
+                    </a>
+            </div>
+        </div>
+        <div class="column bags">
+            <div class="content">
+                <a href="https://shop.macmillan.org.uk/collections/all-gifts/products/rainbow-tote-bag-due-3rd-july" class="contentShopHyperlink">
+                    <img src="elements/MacMillan Items/rainbow bag.PNG" alt="Rainbow Bag" width="293" height="293">
+                    <figcaption class="imgShopTxt">Bag | Rainbow | MacMillan</figcaption>
+                    </a>
+                    <a href="https://shop.macmillan.org.uk/collections/all-gifts/products/rainbow-tote-bag-due-3rd-july" class="contentShopHyperlink">
+                    <button class="buyBtn">Buy</button>
+                    </a>
+            </div>
+        </div>
+    </div>
+    <div class="rowSW">
+        <div class="column pins">
+            <div class="content">
+                <a href="https://shop.gosh.org/products/gosh-logo-pin-badge" class="contentShopHyperlink">
+                    <img src="elements/GOSHFC Items/goshfc pin.PNG" alt="Pin" width="293" height="293">
+                    <figcaption class="imgShopTxt">Pin | GOSHFC Logo | GOSHFC</figcaption>
+                    </a>
+                    <a href="https://shop.gosh.org/products/gosh-logo-pin-badge" class="contentShopHyperlink">
+                    <button class="buyBtn">Buy</button>
+                    </a>
+            </div>
+        </div>
+        <div class="column scarfsUnisex">
+            <div class="content">
+                <a href="https://www.alzscot.shop/products/tartan-scarf" class="contentShopHyperlink">
+                    <img src="elements/AlzheimersScotland Items/unisex clothing/tarten scarf.PNG" alt="Tarten Scarf" width="293" height="293">
+                    <figcaption class="imgShopTxt">Scarf | Unisex | Alzheimer Scotland</figcaption>
+                    </a>
+                    <a href="https://www.alzscot.shop/products/tartan-scarf" class="contentShopHyperlink">
+                    <button class="buyBtn">Buy</button>
+                    </a>
+            </div>
+        </div>
+        <div class="column chairs">
+            <div class="content">
+                <a href="https://www.ebay.co.uk/itm/385523496147?hash=item59c2fdb4d3:g:YlMAAOSw9yJkJHhu" class="contentShopHyperlink">
+                    <img src="elements/BHF Clothing/chair.jpg" alt="Chair" width="293" height="293">
+                    <figcaption class="imgShopTxt">Chair | Brown | British Heart Foundation</figcaption>
+                    </a>
+                    <a href="https://www.ebay.co.uk/itm/385523496147?hash=item59c2fdb4d3:g:YlMAAOSw9yJkJHhu" class="contentShopHyperlink">
+                    <button class="buyBtn">Buy</button>
+                    </a>
+            </div>
+        </div>
+        <div class="column stuffedanimals">
+            <div class="content">
+                <a href="https://shop.gosh.org/products/bernard-bear" class="contentShopHyperlink">
+                    <img src="elements/GOSHFC Items/stuffed bear.PNG" alt="Stuffed Bear" width="293" height="293">
+                    <figcaption class="imgShopTxt">Stuffed Animals | Bear | GOSHFC</figcaption>
+                    </a>
+                    <a href="https://shop.gosh.org/products/bernard-bear" class="contentShopHyperlink">
+                    <button class="buyBtn">Buy</button>
+                    </a>
+            </div>
+        </div>
+    </div>
+    <div class="rowSW">
+        <div class="column sofas">
+            <div class="content">
+                <a href="https://www.ebay.co.uk/itm/374606081833?hash=item5738432f29:g:n6oAAOSwZGtkLAw-" class="contentShopHyperlink">
+                    <img src="elements/BHF Clothing/sofas.jpg" alt="Sofas" width="293" height="293">
+                    <figcaption class="imgShopTxt">Sofas | Black | British Heart Foundation</figcaption>
+                    </a>
+                    <a href="https://www.ebay.co.uk/itm/374606081833?hash=item5738432f29:g:n6oAAOSwZGtkLAw-" class="contentShopHyperlink">
+                    <button class="buyBtn">Buy</button>
+                    </a>
+            </div>
+        </div>
+        <div class="column hatsUnisex">
+            <div class="content">
+                <a href="https://guidedogsshop.com/collections/accessories-1/products/guide-dogs-baseball-cap" class="contentShopHyperlink">
+                    <img src="elements/Guide Dogs Items/guidedoghat.PNG" alt="Guide Dog's Hat" width="293" height="293">
+                    <figcaption class="imgShopTxt">Hat | Navy Blue | Guide Dogs</figcaption>
+                    </a>
+                    <a href="https://guidedogsshop.com/collections/accessories-1/products/guide-dogs-baseball-cap" class="contentShopHyperlink">
+                    <button class="buyBtn">Buy</button>
+                    </a>
+            </div>
+        </div>
+        <div class="column wardrobes">
+            <div class="content">
+                <a href="https://www.ebay.co.uk/itm/385525888080?hash=item59c3223450:g:THQAAOSwJENkLHZF" class="contentShopHyperlink">
+                    <img src="elements/BHF Clothing/wardrobe.jpg" alt="Wardrobe" width="293" height="293">
+                    <figcaption class="imgShopTxt">Wardrobe | Brown | British Heart Fund</figcaption>
+                    </a>
+                    <a href="https://www.ebay.co.uk/itm/385525888080?hash=item59c3223450:g:THQAAOSwJENkLHZF" class="contentShopHyperlink">
+                    <button class="buyBtn">Buy</button>
+                    </a>
+            </div>
+        </div>
+        <div class="column cards">
+            <div class="content">
+                <a href="https://shop.woodlandtrust.org.uk/woodland-trust-cooler-months-notecards" class="contentShopHyperlink">
+                    <img src="elements/Woodland Trust Items/cards.jpeg" alt="Cards" width="293" height="293">
+                    <figcaption class="imgShopTxt">Cards | Animals | Woodland Trust</figcaption>
+                    </a>
+                    <a href="https://shop.woodlandtrust.org.uk/woodland-trust-cooler-months-notecards" class="contentShopHyperlink">
+                    <button class="buyBtn">Buy</button>
+                    </a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--Shop Section (Mobile View)-->
+<div class="shopSectionMobile">
+    <!--Show All Button-->
+    <div class="btnActive">
+    <button class="btn active" onclick="filterSelection('all')">SHOW ALL</button>
+    </div>
+    <!--Shop Filter Buttons (Mobile Dropdown Menu)-->
+    <div id="myBtnContainer">
+        <div class="mensItems">
+        <div class="drpdwnMen">
+        <button class="h3" onclick="myFunctionMen()">MEN</button>
+        <div id="drpdwnMen-content">
+        <!--<button class="btn active" onclick="filterSelection('all')">Show All</button>-->
+        <button class="btn" onclick="filterSelection('tshirtsMen')">T-Shirts</button>
+        <button class="btn" onclick="filterSelection('hoodieMen')">Hoodies</button>
+        <button class="btn" onclick="filterSelection('shoesMen')">Shoes</button>
+        <h3>ACCESSORIES</h3>
+        <button class="btn" onclick="filterSelection('hatsMen')">Hats</button>
+        <button class="btn" onclick="filterSelection('scarfsMen')">Scarfs</button>
+        </div>
+        </div>
+        </div>
+    </div>
+    <!--Shop Filter Buttons (Mobile Dropdown Menu)-->
+    <div id="myBtnContainer">
+        <div class="womensItems">
+        <div class="drpdwnMen">
+        <button class="h3" onclick="myFunctionWomen()">WOMEN</button>
+        <div id="drpdwnWomen-content">
+        <!--<button class="btn active" onclick="filterSelection('all')">Show All</button>-->
+        <button class="btn" onclick="filterSelection('tshirtsWomen')">T-Shirts</button>
+        <button class="btn" onclick="filterSelection('hoodieWomen')">Hoodies</button>
+        <button class="btn" onclick="filterSelection('shoesWomen')">Shoes</button>
+        <h3>ACCESSORIES</h3>
+        <button class="btn" onclick="filterSelection('hatsWomen')">Hats</button>
+        <button class="btn" onclick="filterSelection('scarfsWomen')">Scarfs</button>
+        <button class="btn" onclick="filterSelection('jewelleryWomen')">Jewellery</button>
+        </div>
+        </div>
+        </div>
+    </div>
+    <!--Shop Filter Buttons (Mobile Dropdown Menu)-->
+    <div id="myBtnContainer">
+        <div class="unisexItems">
+        <div class="drpdwnMen">
+        <button class="h3" onclick="myFunctionUnisex()">UNISEX</button>
+        <div id="drpdwnUnisex-content">
+        <!--<button class="btn active" onclick="filterSelection('all')">Show All</button>-->
+        <button class="btn" onclick="filterSelection('tshirtsUnisex')">T-Shirts</button>
+        <button class="btn" onclick="filterSelection('hoodieUnisex')">Hoodies</button>
+        <button class="btn" onclick="filterSelection('shoesUnisex')">Shoes</button>
+        <h3>ACCESSORIES</h3>
+        <button class="btn" onclick="filterSelection('hatsUnisex')">Hats</button>
+        <button class="btn" onclick="filterSelection('scarfsUnisex')">Scarfs</button>
+        <button class="btn" onclick="filterSelection('jewelleryUnisex')">Jewellery</button>
+        </div>
+        </div>
+        </div>
+    </div>
+    <!--Shop Filter Buttons (Mobile Dropdown Menu)-->
+    <div id="myBtnContainer">
+        <div class="furniture">
+        <div class="drpdwnMen">
+        <button class="h3" onclick="myFunctionFurn()">FURNITURE</button>
+        <div id="drpdwnFurn-content">
+        <!--<button class="btn active" onclick="filterSelection('all')">Show All</button>-->
+        <button class="btn" onclick="filterSelection('table')">Table</button>
+        <button class="btn" onclick="filterSelection('sofas')">Sofas</button>
+        <button class="btn" onclick="filterSelection('chairs')">Chairs</button>
+        <button class="btn" onclick="filterSelection('wardrobes')">Wardrobes</button>
+        </div>
+        </div>
+        </div>
+    </div>
+    <!--Shop Filter Buttons (Mobile Dropdown Menu)-->
+    <div id="myBtnContainer">
+        <div class="entertainment">
+        <div class="drpdwnMen">
+        <button class="h3" onclick="myFunctionEnter()">ENTERTAINMENT</button>
+        <div id="drpdwnEnter-content">
+        <!--<button class="btn active" onclick="filterSelection('all')">Show All</button>-->
+        <button class="btn" onclick="filterSelection('books')">Books</button>
+        <button class="btn" onclick="filterSelection('stuffedanimals')">Stuffed Animals</button>
+        </div>
+        </div>
+        </div>
+    </div>
+    <!--Shop Filter Buttons (Mobile Dropdown Menu)-->
+    <div id="myBtnContainer">
+        <div class="other">
+        <div class="drpdwnMen">
+        <button class="h3" onclick="myFunctionOther()">OTHER</button>
+        <div id="drpdwnOther-content">
+        <!--<button class="btn active" onclick="filterSelection('all')">Show All</button>-->
+        <button class="btn" onclick="filterSelection('cards')">Cards</button>
+        <button class="btn" onclick="filterSelection('pins')">Pins</button>
+        <button class="btn" onclick="filterSelection('bags')">Bags</button>
+        </div>
+        </div>
+        </div>
+    </div>
+
+    <!--Shop Content Images and Text (Mobile View)-->
+    <div id="row">
+        <div class="column tshirtsMen">
+            <div class="content">
+                <a href="https://www.alzscot.shop/products/scotlands-memory-walk-adult-t-shirt" class="contentShopHyperlink">
+                <img src="elements/AlzheimersScotland Items/unisex clothing/MemoryWalkT-Shirt.PNG" alt="Memory Walk Tshirt" width="293" height="293">
+                <figcaption class="imgShopTxt">T-Shirt | Purple | Alzheimer Scotland</figcaption>
+                </a>
+            </div>
+        </div>
+        <div class="column hatsWomen">
+            <div class="content">
+                <a href="https://shop.macmillan.org.uk/products/macmillan-bucket-hat" class="contentShopHyperlink">
+                <img src="elements/MacMillan Items/white-bucket-hat.PNG" alt="Bucket Hat" width="293" height="293">
+                <figcaption class="imgShopTxt">Hat | White | MacMillan Cancer Support</figcaption>
+                </a>
+            </div>
+        </div>
+        <div class="column shoesWomen">
+            <div class="content">
+                <a href="https://www.ebay.co.uk/itm/225493484320?hash=item3480758320:g:ojwAAOSw-NpkHYUl" class="contentShopHyperlink">
+                <img src="elements/Cancer Research Items/womans-black-boots.png" alt="Black Boots" width="293" height="293">
+                <figcaption class="imgShopTxt">Shoes | Black | Cancer Research UK</figcaption>
+                </a>
+            </div>
+        </div>
+        <div class="column tshirtsWomen">
+            <div class="content">
+                <a href="https://shop.wwf.org.uk/products/ben-rothery-t-shirts" class="contentShopHyperlink">
+                <img src="elements/WWF/BenRotheryTshirt.PNG" alt="Ben Rothery Tshirt" width="293" height="293">
+                <figcaption class="imgShopTxt">T-Shirt | White | WWF</figcaption>
+                </a>
+            </div>
+        </div>
+        <div class="column hoodieMen">
+            <div class="content">
+                <a href="https://shop.gosh.org/products/washed-black-hoodie" class="contentShopHyperlink">
+                <img src="elements/GOSHFC Items/mens-grey-hoodie.png" alt="Grey Hoodie" width="293" height="293">
+                <figcaption class="imgShopTxt">Hoodie | Grey | GOSHFC</figcaption>
+                </a>
+            </div>
+        </div>
+        <div class="column pins">
+            <div class="content">
+                <a href="https://www.poppyshop.org.uk/products/2023-dated-poppy-lapel-pin-3" class="contentShopHyperlink">
+                <img src="elements/Royal British Legion Items/poppypin.PNG" alt="Poppy Pin" width="293" height="293">
+                <figcaption class="imgShopTxt">Pin | Poppy | Royal British Legion</figcaption>
+                </a>
+            </div>
+        </div>
+        <div class="column tshirtsMen">
+            <div class="content">
+                <a href="https://shop.helpforheroes.org.uk/collections/mens-polos-shirts/products/navy-neptune-union-jack-sleeve-polo-1" class="contentShopHyperlink">
+                <img src="elements/Help for Heroes Items/navy_blue_union_jack_polo.PNG" alt="Union Jack Polo" width="293" height="293">
+                <figcaption class="imgShopTxt">Polo Shirt | Navy Blue | Help for Heroes</figcaption>
+                </a>
+            </div>
+        </div>
+        <div class="column tshirtsUnisex">
+            <div class="content">
+                <a href="https://giftshop.redcross.org.uk/collections/all-clothing/products/love-is-love-unisex-white-t-shirt" class="contentShopHyperlink">
+                <img src="elements/BRC Items/loveitlovetshirt.PNG" alt="Love is Love Tshirt" width="293" height="293">
+                <figcaption class="imgShopTxt">T-Shirt | White | British Red Cross</figcaption>
+                </a>
+            </div>
+        </div>
+
+        <div class="column hatsMen">
+            <div class="content">
+                <a href="https://shop.helpforheroes.org.uk/collections/hats-and-scarves/products/navy-essential-logo-baseball-cap" class="contentShopHyperlink">
+                    <img src="elements/Help for Heroes Items/Essential Baseball Cap.PNG" alt="Baseball Cap" width="293" height="293">
+                    <figcaption class="imgShopTxt">Hat | Navy Blue | Help for Heroes</figcaption>
+                    </a>
+            </div>
+        </div>
+        <div class="column shoesWomen">
+            <div class="content">
+                <a href="https://www.ebay.co.uk/itm/185830516811?hash=item2b445ca84b:g:BqcAAOSwcEtkF1~i" class="contentShopHyperlink">
+                    <img src="elements/BRC Items/blackboots.jpg" alt="Black Boots" width="293" height="293">
+                    <figcaption class="imgShopTxt">Shoes | Black | British Red Cross</figcaption>
+                    </a>
+            </div>
+        </div>
+        <div class="column hatsUnisex">
+            <div class="content">
+                <a href="https://www.bbcchildreninneedshop.co.uk/products/2021-Pudsey-Ears" class="contentShopHyperlink">
+                    <img src="elements/Children In Need Items/childreninneed items/ClassicPudseyEarsYellow.png" alt="Pudsey Ears" width="293" height="293">
+                    <figcaption class="imgShopTxt">Hat | Yellow | Children in Need</figcaption>
+                    </a>
+            </div>
+        </div>
+        <div class="column table">
+            <div class="content">
+                <a href="https://www.ebay.co.uk/itm/385523390561?hash=item59c2fc1861:g:UdQAAOSwSd1kKzHM" class="contentShopHyperlink">
+                    <img src="elements/BHF Clothing/brown desk table.jpg" alt="Desk Table" width="293" height="293">
+                    <figcaption class="imgShopTxt">Table | Brown | British Heart Foundation</figcaption>
+                    </a>
+            </div>
+        </div>
+        <div class="column jewelleryUnisex">
+            <div class="content">
+                <a href="https://www.poppyshop.org.uk/products/bee-and-poppy-stud-earrings" class="contentShopHyperlink">
+                    <img src="elements/Royal British Legion Items/poppy earrings.PNG" alt="Poppy Earrings" width="293" height="293">
+                    <figcaption class="imgShopTxt">Jewellery | Earrings | Royal British Legion</figcaption>
+                    </a>
+            </div>
+        </div>
+        <div class="column tshirtsUnisex">
+            <div class="content">
+                <a href="https://www.bbcchildreninneedshop.co.uk/products/22-official-tee-adult-yellow" class="contentShopHyperlink">
+                    <img src="elements/Children In Need Items/childreninneed items/Yellow tshirt.png" alt="Yellow Tshirt" width="293" height="293">
+                    <figcaption class="imgShopTxt">T-Shirt | Yellow | Children in Need</figcaption>
+                    </a>
+            </div>
+        </div>
+        <div class="column books">
+            <div class="content">
+                <a href="https://shop.macmillan.org.uk/collections/books-games/products/the-green-kitchen-cookery-book" class="contentShopHyperlink">
+                    <img src="elements/MacMillan Items/macmillan book.jpg" alt="The Green Kitchen Book" width="293" height="293">
+                    <figcaption class="imgShopTxt">Book | The Green Kitchen | MacMillan</figcaption>
+                    </a>
+            </div>
+        </div>
+        <div class="column bags">
+            <div class="content">
+                <a href="https://shop.macmillan.org.uk/collections/all-gifts/products/rainbow-tote-bag-due-3rd-july" class="contentShopHyperlink">
+                    <img src="elements/MacMillan Items/rainbow bag.PNG" alt="Rainbow Bag" width="293" height="293">
+                    <figcaption class="imgShopTxt">Bag | Rainbow | MacMillan</figcaption>
+                    </a>
+            </div>
+        </div>
+        <div class="column pins">
+            <div class="content">
+                <a href="https://shop.gosh.org/products/gosh-logo-pin-badge" class="contentShopHyperlink">
+                    <img src="elements/GOSHFC Items/goshfc pin.PNG" alt="Pin" width="293" height="293">
+                    <figcaption class="imgShopTxt">Pin | GOSHFC Logo | GOSHFC</figcaption>
+                    </a>
+            </div>
+        </div>
+        <div class="column scarfsUnisex">
+            <div class="content">
+                <a href="https://www.alzscot.shop/products/tartan-scarf" class="contentShopHyperlink">
+                    <img src="elements/AlzheimersScotland Items/unisex clothing/tarten scarf.PNG" alt="Tarten Scarf" width="293" height="293">
+                    <figcaption class="imgShopTxt">Scarf | Unisex | Alzheimer Scotland</figcaption>
+                    </a>
+            </div>
+        </div>
+        <div class="column chairs">
+            <div class="content">
+                <a href="https://www.ebay.co.uk/itm/385523496147?hash=item59c2fdb4d3:g:YlMAAOSw9yJkJHhu" class="contentShopHyperlink">
+                    <img src="elements/BHF Clothing/chair.jpg" alt="Chair" width="293" height="293">
+                    <figcaption class="imgShopTxt">Chair | Brown | British Heart Foundation</figcaption>
+                    </a>
+            </div>
+        </div>
+        <div class="column stuffedanimals">
+            <div class="content">
+                <a href="https://shop.gosh.org/products/bernard-bear" class="contentShopHyperlink">
+                    <img src="elements/GOSHFC Items/stuffed bear.PNG" alt="Stuffed Bear" width="293" height="293">
+                    <figcaption class="imgShopTxt">Stuffed Animals | Bear | GOSHFC</figcaption>
+                    </a>
+            </div>
+        </div>
+
+        <div class="column sofas">
+            <div class="content">
+                <a href="https://www.ebay.co.uk/itm/374606081833?hash=item5738432f29:g:n6oAAOSwZGtkLAw-" class="contentShopHyperlink">
+                    <img src="elements/BHF Clothing/sofas.jpg" alt="Sofas" width="293" height="293">
+                    <figcaption class="imgShopTxt">Sofas | Black | British Heart Foundation</figcaption>
+                    </a>
+            </div>
+        </div>
+        <div class="column hatsUnisex">
+            <div class="content">
+                <a href="https://guidedogsshop.com/collections/accessories-1/products/guide-dogs-baseball-cap" class="contentShopHyperlink">
+                    <img src="elements/Guide Dogs Items/guidedoghat.PNG" alt="Guide Dogs Hat" width="293" height="293">
+                    <figcaption class="imgShopTxt">Hat | Navy Blue | Guide Dogs</figcaption>
+                    </a>
+            </div>
+        </div>
+        <div class="column wardrobes">
+            <div class="content">
+                <a href="https://www.ebay.co.uk/itm/385525888080?hash=item59c3223450:g:THQAAOSwJENkLHZF" class="contentShopHyperlink">
+                    <img src="elements/BHF Clothing/wardrobe.jpg" alt="Wardrobe" width="293" height="293">
+                    <figcaption class="imgShopTxt">Wardrobe | Brown | British Heart Foundation</figcaption>
+                    </a>
+            </div>
+        </div>
+        <div class="column cards">
+            <div class="content">
+                <a href="https://shop.woodlandtrust.org.uk/woodland-trust-cooler-months-notecards" class="contentShopHyperlink">
+                    <img src="elements/Woodland Trust Items/cards.jpeg" alt="Cards" width="293" height="293">
+                    <figcaption class="imgShopTxt">Cards | Animals | Woodland Trust</figcaption>
+                    </a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!---Footer Section--->
+<div class="footerSection">
+    <div class="footerContent">
+        <div class="fContactHeader">Contact Us</div>
+        <div class="fContactContent">Email: www.SearchRelief@live.co.uk</div>
+        <div class="fContactContent">Phone: ********</div>
+        <div class="fContactContent">Address: 308 Negra Arroyo Lane, Albuquerque, New Mexico</div>
+    </div>
+    <div class="footerContent">
+        <div class="fContactHeader">Partnered Charities</div>
+        <div class="fImageContent">
+            <div class="footerImages">
+                <a href="https://www.bhf.org.uk/" class="footerHyperlink">
+                <img src="elements/BHF Clothing/BHFLogo.png" alt="British Heart Foundation Logo" width="80" height="80">
+                </a>
+                <a href="https://www.cancerresearchuk.org/" class="footerHyperlink">
+                <img src="elements/Cancer Research Items/Cancer-ResearchLogo.png" alt="Cancer Research Logo" width="80" height="80">
+                </a>
+                <a href="https://www.guidedogs.org.uk/" class="footerHyperlink">
+                <img src="elements/Guide Dogs Items/guidedogsLogo.png" alt="Guide Dogs Logo" width="80" height="80">
+                </a>
+                <a href="https://www.gosh.org/" class="footerHyperlink">
+                <img src="elements/GOSHFC Items/GOSHFCLogo.png" alt="GOSHFC Logo" width="80" height="80">
+                </a>
+                <a href="https://www.macmillan.org.uk/" class="footerHyperlink">
+                <img src="elements/MacMillan Items/macmillanLogo.png" alt="MacMillan Cancer Support Logo" width="80" height="80">
+                </a>
+            </div>
+            <div class="footerImages">
+                <a href="https://www.helpforheroes.org.uk/" class="footerHyperlink">
+                <img src="elements/Help for Heroes Items/HelpforHeroes_logo.png" alt="Help for Heroes Logo" width="80" height="80">
+                </a>
+                <a href="https://www.wwf.org.uk/" class="footerHyperlink">
+                <img src="elements/WWF/WWFLogo.jpg" alt="WWF Logo" width="80" height="80">
+                </a>
+                <a href="https://www.oxfam.org.uk/" class="footerHyperlink">
+                <img src="elements/Oxfam Items/OxfamLogo2.PNG" alt="Oxfam Logo" width="80" height="80">
+                </a>
+                <a href="https://www.redcross.org.uk/" class="footerHyperlink">
+                <img src="elements/BRC Items/BritishRedCrossLogo.png" alt="British Red Cross Logo" width="80" height="80">
+                </a>
+                <a href="https://www.alzscot.org/" class="footerHyperlink">
+                <img src="elements/AlzheimersScotland Items/AlzheimersScotlandLogo.PNG" alt="Alzheimers Scotland Logo" width="80" height="80">
+                </a>
+            </div>
+            <div class="footerImages">
+                <a href="https://www.rspca.org.uk/" class="footerHyperlink">
+                <img src="elements/RSPCA Items/RSPCALogo.jpg" alt="RSPCA Logo" width="80" height="80">
+                </a>
+                <a href="https://www.britishlegion.org.uk/" class="footerHyperlink">
+                <img src="elements/Royal British Legion Items/RoyalBritishLegionLogo.jpg" alt="Royal British Legion Logo" width="80" height="80">
+                </a>
+                <a href="https://www.unicef.org/" class="footerHyperlink">
+                <img src="elements/Unicef Items/UnicefLogo.PNG" alt="Unicef Logo" width="80" height="80">
+                </a>
+                <a href="https://www.bbcchildreninneed.co.uk/" class="footerHyperlink">
+                <img src="elements/Children In Need Items/ChildrenInNeedLogo.jpg" alt="Children in Need Logo" width="80" height="80">
+                </a>
+                <a href="https://www.woodlandtrust.org.uk/" class="footerHyperlink">
+                <img src="elements/Woodland Trust Items/WoodlandTrustLogo.jpg" alt="Woodland Trust Logo" width="80" height="80">
+                </a>
+            </div>
+            </div>
+            <div class="fImageContentMobile">
+                <div class="footerImages">
+                    <a href="https://www.bhf.org.uk/" class="footerHyperlink">
+                    <img src="elements/BHF Clothing/BHFLogo.png" alt="British Heart Foundation Logo">
+                    </a>
+                    <a href="https://www.cancerresearchuk.org/" class="footerHyperlink">
+                    <img src="elements/Cancer Research Items/Cancer-ResearchLogo.png" alt="Cancer Research Logo">
+                    </a>
+                    <a href="https://www.guidedogs.org.uk/" class="footerHyperlink">
+                    <img src="elements/Guide Dogs Items/guidedogsLogo.png" alt="Guide Dogs Logo">
+                    </a>
+                    <a href="https://www.gosh.org/" class="footerHyperlink">
+                    <img src="elements/GOSHFC Items/GOSHFCLogo.png" alt="GOSHFC Logo">
+                    </a>
+                    <a href="https://www.macmillan.org.uk/" class="footerHyperlink">
+                    <img src="elements/MacMillan Items/macmillanLogo.png" alt="MacMillan Cancer Support Logo">
+                    </a>
+                </div>
+                <div class="footerImages">
+                    <a href="https://www.helpforheroes.org.uk/" class="footerHyperlink">
+                    <img src="elements/Help for Heroes Items/HelpforHeroes_logo.png" alt="Help for Heroes Logo">
+                    </a>
+                    <a href="https://www.wwf.org.uk/" class="footerHyperlink">
+                    <img src="elements/WWF/WWFLogo.jpg" alt="WWF Logo">
+                    </a>
+                    <a href="https://www.oxfam.org.uk/" class="footerHyperlink">
+                    <img src="elements/Oxfam Items/OxfamLogo2.PNG" alt="Oxfam Logo">
+                    </a>
+                    <a href="https://www.redcross.org.uk/" class="footerHyperlink">
+                    <img src="elements/BRC Items/BritishRedCrossLogo.png" alt="British Red Cross Logo">
+                    </a>
+                    <a href="https://www.alzscot.org/" class="footerHyperlink">
+                    <img src="elements/AlzheimersScotland Items/AlzheimersScotlandLogo.PNG" alt="Alzheimers Scotland Logo">
+                    </a>
+                </div>
+                <div class="footerImages">
+                    <a href="https://www.rspca.org.uk/" class="footerHyperlink">
+                    <img src="elements/RSPCA Items/RSPCALogo.jpg" alt="RSPCA Logo">
+                    </a>
+                    <a href="https://www.britishlegion.org.uk/" class="footerHyperlink">
+                    <img src="elements/Royal British Legion Items/RoyalBritishLegionLogo.jpg" alt="Royal British Legion Logo">
+                    </a>
+                    <a href="https://www.unicef.org/" class="footerHyperlink">
+                    <img src="elements/Unicef Items/UnicefLogo.PNG" alt="Unicef Logo">
+                    </a>
+                    <a href="https://www.bbcchildreninneed.co.uk/" class="footerHyperlink">
+                    <img src="elements/Children In Need Items/ChildrenInNeedLogo.jpg" alt="Children in Need Logo">
+                    </a>
+                    <a href="https://www.woodlandtrust.org.uk/" class="footerHyperlink">
+                    <img src="elements/Woodland Trust Items/WoodlandTrustLogo.jpg" alt="Woodland Trust Logo">
+                    </a>
+                </div>
+                </div>
+    </div>
+    <div class="footerContent">
+        <div class="fContactHeader">Website Information</div>
+        <div class="fContactContent">2023, Search Relief Charity Aggregator</div>
+        <div class="fContactContent">Website By Oscar Ruano</div>
+        <div class="fContactContent">Email: ruano026@hotmail.co.uk</div>
+    </div>
+</div>
+</main>
+
+</body>
+</html>

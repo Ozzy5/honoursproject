@@ -1,0 +1,2454 @@
+/*--Search Relief Top Left Icon--*/
+.topleftIcon{
+    width: 100px;
+    margin-top: 10px;
+}
+head{
+}
+body{
+    background-image: linear-gradient(#AEE8D5,#FFFFFF);
+    margin: 0%;
+}
+main{
+}
+/*---NavBar Section (Start)---*/
+.home{
+    color: #FFFFFF;
+}
+#shop{
+    color: #FFFFFF;
+}
+#home{
+    color: #ffffff;
+}
+.nav{
+    font-size: 250%;
+}
+nav a{
+    text-decoration: none;
+    color: #000;
+    font-family: Arial Narrow;
+    padding: 20px;
+    font-weight: bold;
+}
+nav a:hover{
+    color: #ffffff;
+    transition: 0.2s;
+}
+.navBar{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding-top: 0px;
+}
+.backgroundLogo{
+    margin-bottom: -100px;
+}
+.leftNav{
+    width: 15%;
+}
+.middleNav{
+    width: 70%;
+    text-align: center;
+}
+.rightNav{
+    width: 15%;
+    text-align: right;
+}
+/*---NavBar Section (End)---*/
+
+/*---SearchBar Section (Start)---*/
+.topnav{
+    justify-content: center;
+    display: flex;
+    margin-top: 35px;
+}
+.topnav .search-container {
+  justify-content: center;
+}
+.topnav input[type=text] {
+  padding-top: 15px;
+  padding-bottom: 15px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-top: 8px;
+  font-size: 30px;
+  border: none;
+  border-top: 2px solid;
+  border-bottom: 2px solid;
+  border-right: 2px solid;
+  border-radius: 0px 50px 50px 0px;
+  background: #ffffff;
+  color: #000000;
+}
+.topnav input[type=text]:hover{
+    background: #d4d4d4;
+}
+.topnav .search-container button{
+  padding-bottom: 9px;
+  padding-top: 9.5px;
+  padding-left: 25px;
+  padding-right: 15px;
+  margin-top: 8px;
+  margin-right: 0px;
+  background: #ffffff;
+  color: #000000;
+  font-size: 40px;
+  border: none;
+  cursor: pointer;
+  float: left;
+  border-radius: 50px 0px 0px 50px;
+  border-left: 2px solid;
+  border-top: 2px solid;
+  border-bottom: 2px solid;
+}
+.topnav .search-container button:hover{
+  background: #e4e4e4;
+  color: #000000;
+}
+/*---SearchBar Section (End)---*/
+
+/*---All Hyperlinked Images (Start)---*/
+.imageScrollerHyperlink > img{
+    border: 4px solid #000;
+    inline-size: 90%;
+}
+.imageScrollerHyperlink, .charityScrollerHyperlink, .fundScrollerHyperlink, .contentShopHyperlink, .fundPageHyperlink, .volPageHyperlink, .donPageHyperlink{
+    text-decoration: none;
+    color: #000
+}
+.imageScrollerHyperlink:hover, .charityScrollerHyperlink:hover, .fundScrollerHyperlink:hover, .contentShopHyperlink:hover, .fundPageHyperlink:hover, .volPageHyperlink:hover{
+    filter: brightness(50%);
+    transition: 0.3s;
+}
+.imageScrollerHyperlink > figcaption{
+    display: flex;
+    justify-content: center;
+    font-size: 1.2em;
+    font-family: Arial Narrow;
+    padding-left: 0px;
+    padding-right: 0px;
+    width: 90%;
+}
+.charityScrollerHyperlink > img{
+    border-radius: 50%;
+    border: 4px solid #000;
+    margin: 10px;
+}
+.charityScrollerHyperlink > figcaption{
+    font-family: Arial Narrow;
+}
+.fundScrollerHyperlink > img{
+    border: 4px solid #000;
+    margin: 10px;
+    width: 925px;
+}
+.fundScrollerHyperlink > figcaption{
+    font-family: Arial Narrow;
+}
+.contentShopHyperlink > img{
+    border: 3px solid #000;
+}
+.contentShopHyperlink > figcaption{
+    font-family: Arial Narrow;
+}
+.buyBtn:hover{
+    background-color: #125c00;
+    transition: 0.3s;
+}
+.fundPageHyperlink > img{
+    margin: 10px;
+    margin-top: 30px;
+    border: 3px solid #000;
+}
+.fundPageHyperlink > figcaption{
+    font-family: Arial Narrow;
+    display: flex;
+    justify-content: center;
+    font-size: 25px;
+}
+.volPageHyperlink{
+    cursor: pointer;
+}
+.donPageHyperlink{
+    cursor: pointer;
+}
+/*---All Hyperlinked Images (End)---*/
+
+/*---Index Page Section (Start)---*/
+.scrollerHeader{
+    display: flex;
+    margin-top: 40px;
+    justify-content: center;
+    font-size: 2em;
+    text-decoration: underline;
+    font-family: Arial Narrow;
+    font-weight: bold;
+    padding-top: 20px;
+}
+.homeSection{
+    box-shadow: 0px 0px 30px 12px rgb(255, 255, 255);
+    background-color: #ffffff;
+}
+/*---Clothing Scroller Section (Start)---*/
+.image-scroller{
+    display: grid;
+    margin-top: 20px;
+    grid-auto-flow: column;
+    grid-auto-columns: 20.3%;
+    overflow-x: auto;
+    overscroll-behavior-inline: contain;
+    padding-bottom: 20px;
+    margin-bottom: 50px;
+}
+.image-element > img{
+    inline-size: 90%;
+    object-fit: fill;
+    border: 4px solid #000;
+}
+.pClothingHeaders{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    font-size: 20px;
+    margin-top: -5px;
+    padding: 10px;
+}
+/*--Hover Section--*/
+.image-element > img:hover{
+    transition: 0.3s;
+    cursor: pointer;
+    filter: brightness(50%);
+}
+.charity-element > img:hover{
+    transition: 0.3s;
+    cursor: pointer;
+    filter: brightness(50%);
+}
+.fund-element > img:hover{
+    transition: 0.3s;
+    cursor: pointer;
+    filter: brightness(50%);
+}
+.footerImages > img:hover{
+    transition: 0.3s;
+    cursor: pointer;
+    filter: brightness(50%);
+}
+/*---Clothing Scroller Section (End)---*/
+/*---Charity Scroller Section (Start)---*/
+.charity-scroller{
+    display: flex;
+    margin-top: 20px;
+    grid-auto-flow: column;
+    grid-auto-columns: 20.3%;
+    overflow-x: auto;
+    overscroll-behavior-inline: contain;
+    padding-bottom: 20px;
+    margin-bottom: 50px;
+}
+.charity-element > img{
+    border-radius: 50%;
+    border: 4px solid #000;
+    margin: 10px;
+}
+.charityHeaders{
+    font-size: 25px;
+    display: flex;
+    margin-left: 0px;
+    justify-content: center;
+    text-align: center;
+}
+.blackLine{
+    display: flex;
+    justify-content: center;
+    width: 80%;
+    height: 6px;
+    background-color: #000;
+    margin-left: 10%;
+    margin-top: 2%;
+}
+/*---Charity Scroller Section (Start)---*/
+/*---Fundraier Scroller Section (Start)---*/
+.fund-scroller{
+    display: flex;
+    margin-top: 20px;
+    grid-auto-flow: column;
+    grid-auto-columns: 20.3%;
+    overflow-x: auto;
+    overscroll-behavior-inline: contain;
+    padding-bottom: 20px;
+    margin-bottom: 50px;
+}
+.fund-element > img{
+    border: 4px solid #000;
+    margin: 10px;
+    width: 925px;
+}
+/*---Fundraier Scroller Section (End)---*/
+/*---Index Page Section (End)---*/
+
+/*---Footer Section (Start)---*/
+.footerSection{
+    background-color: rgb(43, 43, 43);
+    display: flex;
+    justify-content: center;
+    padding-bottom: 40px;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 40px;
+}
+.footerHeader{
+    font-size: 1.8em;
+    padding-top: 25px;
+    padding-left: 16%;
+    padding-bottom: 15px;
+    font-family: Arial Narrow;
+    color: #c4c4c4;
+    background-color: rgb(43, 43, 43);
+    display: flex;
+}
+.footerContent{
+    width: 60%;
+    padding: 25px;
+    border-top: 4px solid #c4c4c4;
+    border-right: 4px solid #c4c4c4;
+    border-top-right-radius: 20px;
+    color: #c4c4c4;
+    background-color: rgb(31, 31, 31);
+}
+.fContactHeader{
+    font-size: 35px;
+    padding-bottom: 15px;
+    text-decoration: 3px underline;
+}
+.fContactContent{
+    font-size: 23px;
+    padding-top: 15px;
+}
+.footerImages > img{
+    border-radius: 40px 40px;
+}
+.footerHyperlink > img{
+    border-radius: 40px 40px;
+}
+.footerHyperlink:hover{
+    opacity: 0.5;
+    transition: 0.2s;
+}
+.fImageContent{
+    padding-top: 15px;
+    margin-left: 70px;
+}
+/*---Footer Section (End)---*/
+
+/*---Display None Section (Start)---*/
+.mobile-container{
+    display: none;
+}
+.image-scrollerMobile{
+    display: none;
+}
+.charity-scrollerMobile{
+    display: none;
+}
+.fund-scrollerMobile{
+    display: none;
+}
+.fImageContentMobile{
+    display: none;
+}
+.donateSectionMobile{
+    display: none;
+}
+.middleNavMacScreen{
+    display: none;
+}
+.donateSectionSmallWindow{
+    display: none;
+}
+.shopSectionSmallWindow{
+    display: none;
+}
+.shopSectionMobile{
+    display: none;
+}
+.rowFundMobile{
+    display: none;
+}
+.volunteerSectionMobile{
+    display: none;
+}
+/*---Display None Section (End)---*/
+
+/*---Shop Page Section (Start)---*/
+.shopSection{
+    background-color: #ffffff;
+}
+h2{
+    font-size: 2em;
+    font-family: Arial Narrow;
+    font-weight: bold;
+}
+.row{
+    display: flex;
+    margin-top: 20px;
+    padding-bottom: 20px;
+}
+.row, .row > .column{
+    padding: 8px;
+}
+.column{
+    display: none;
+}
+.row:after{
+    content: "";
+    display: table;
+    clear: both;
+}
+.content{
+    background-color: rgb(255, 255, 255);
+    font-size: 1.3em;
+    text-align: center;
+}
+.imgShopTxt{
+    height: 50px;
+}
+.buyBtn{
+    background-color: #1a8100;
+    color: #ffffff;
+    padding: 5px;
+    border-radius: 20%;
+    font-size: 1.2em;
+    font-weight: bold;
+    margin: 11px;
+    margin-bottom: 0px;
+    border: 2px solid #000;
+    cursor: pointer;
+}
+.content > img{
+    border: 3px solid #000;
+}
+.show{
+    display: flex;
+    justify-content: center;
+}
+.btn{
+    border: none;
+    outline: none;
+    padding: 12px 16px;
+    background-color: rgb(80, 80, 80);
+    font-size: 1.2em;
+    font-weight: bold;
+    color: #ffffff;
+    cursor: pointer;
+}
+.btn:hover{
+    background-color: #000000;
+}
+.btnActive{
+    background-color: #dfdfdf;
+    display: flex;
+    justify-content: center;
+}
+.btn.active{
+    background-color: rgb(255, 0, 0);
+    margin-bottom: 10px;
+    text-shadow: 0px 0px 5px #000;
+    box-shadow: 0px 0px 8px #000;
+}
+#myBtnContainer{
+    display: flex;
+    justify-content: center;
+    padding-bottom: 30px;
+    border-bottom: 6px solid #000;
+    background-color: #dfdfdf;
+}
+.filtermainHeader{
+    background-color: #dfdfdf;
+    margin: 0%;
+    margin-top: 30px;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    border-top: 6px solid #000;
+    text-decoration: underline;
+}
+h3{
+    color: #000000;
+    font-size: 1.2em;
+}
+.mensItems, .womensItems, .unisexItems, .furniture, .entertainment{
+    padding: 20px;
+    font-size: 15px;
+    font-family: Arial Narrow;
+    font-weight: bold;
+    border-right: 4px solid #000;
+}
+.mensItems > button, .womensItems > button, .unisexItems > button, .furniture > button, .entertainment > button{
+    font-size: 15px;
+}
+.other{
+    padding: 20px;
+    font-size: 15px;
+    font-family: Arial Narrow;
+    font-weight: bold;
+}
+.imgShopTxt{
+    width: 100%;
+}
+/*---Shop Page Section (End)---*/
+
+/*---Fundraise Page Section (Start)---*/
+.fundraiseSection{
+    background-color: #dfdfdf;
+    border-top: 3px solid #000;
+    padding-top: 10px;
+    margin-top: 30px;
+}
+.btnFundActive{
+    background-color: #dfdfdf;
+    display: flex;
+    justify-content: center;
+}
+.btnFundActive > .btn.active{
+    background-color: rgb(255, 0, 0);
+    margin-top: 12px;
+    font-size: 1.5em;
+    text-shadow: 0px 0px 5px #000;
+    box-shadow: 0px 0px 8px #000;
+}
+.btn.active:hover{
+    background-color: #a70000;
+}
+.btn.active:focus{
+    background-color: #a70000;
+}
+.fundraiserTitle{
+    display: flex;
+    justify-content: center;
+    font-size: 2em;
+    font-family: Arial Narrow;
+    padding-top: 10px;
+    font-weight: bold;
+    text-decoration: underline;
+}
+.rows-ContainerBlackLine{
+    border-bottom: 3px solid #000;
+    padding-bottom: 10px;
+}
+#myBtnFundContainer{
+    display: flex;
+    justify-content: center;
+    margin: 10px;
+}
+#myBtnFundContainer > .btnFund{
+    margin: 0px;
+    margin-top: 0px;
+    margin-right: 5px;
+    margin-left: 5px;
+    padding: 0px;
+    border-radius: 50%;
+    border: 4px solid #000;
+    cursor: pointer;
+}
+.btnFund:hover{
+    filter: brightness(0.7);
+}
+.btnFund > img{
+    border-radius: 50%;
+    width: 95px;
+    height: 80px;
+    margin-top: -1px;
+    margin-bottom: -4px;
+}
+.rowFund{
+    display: flex;
+    justify-content: center;
+    background-color: #ffffff;
+}
+.contentFund > img{
+    margin: 10px;
+    margin-top: 30px;
+    border: 3px solid #000;
+}
+.contentFund > .fundRowsTitles{
+    display: flex;
+    justify-content: center;
+    font-size: 1.5em;
+    font-family: Arial Narrow;
+    margin-bottom: 20px;
+}
+.fundRowsTitles{
+    padding-bottom: 20px;
+}
+/*---Fundraise Page Section (End)---*/
+
+/*---Donate Page Section (Start)---*/
+.donateSection{
+    width: 100%;
+    background-color: #ffffff;
+    box-shadow: 0 0 50px #ffffff;
+    margin-top: 50px;
+    box-shadow: 0px 0px 30px 12px rgb(255, 255, 255);
+}
+.charityTabHeaders{
+    display: flex;
+    justify-content: center;
+    color: rgb(0, 0, 0);
+    font-size: 2.5em;
+    font-family: Arial Narrow;
+    font-weight: bold;
+    padding: 10px;
+    text-decoration: underline 3px;
+}
+.charityTabSections{
+    display: flex;
+    justify-content: center;
+    padding-top: 1%;
+    padding-bottom: 1%;
+}
+.AlzheimersBannerText{
+    position: absolute;
+    color: #ffffff;
+    font-size: 2.2em;
+    bottom: 13%;
+    left: 9.3%;
+    background-color: #4f1e799a;
+    padding-left: 20%;
+    padding-right: 5%;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    text-shadow: 0px 0px 10px #000;
+    box-shadow: 0px 0px 9px #000;
+}
+.bhfBannerText{
+    position: absolute;
+    color: #ffffff;
+    font-size: 2.2em;
+    bottom: -43%;
+    left: 9.3%;
+    background-color: #ee1a2f9f;
+    padding-left: 20%;
+    padding-right: 5%;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    text-shadow: 0px 0px 10px #000;
+    box-shadow: 0px 0px 9px #000;
+}
+.brcBannerText{
+    position: absolute;
+    color: #ffffff;
+    font-size: 2.2em;
+    bottom: -99%;
+    left: 9.3%;
+    background-color: #ffffff9f;
+    padding-left: 20%;
+    padding-right: 5%;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    text-shadow: 0px 0px 10px #000;
+    box-shadow: 0px 0px 9px #000;
+}
+.childreninneedBannerText{
+    position: absolute;
+    color: #ffffff;
+    font-size: 2.2em;
+    bottom: -156%;
+    left: 9.3%;
+    background-color: #ffcf22ab;
+    padding-left: 20%;
+    padding-right: 5%;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    text-shadow: 0px 0px 10px #000;
+    box-shadow: 0px 0px 9px #000;
+}
+.cancerresearchBannerText{
+    position: absolute;
+    color: #ffffff;
+    font-size: 2.2em;
+    bottom: -212%;
+    left: 9.3%;
+    background-color: #ec008e86;
+    padding-left: 20%;
+    padding-right: 5%;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    text-shadow: 0px 0px 10px #000;
+    box-shadow: 0px 0px 9px #000;
+}
+.goshfcBannerText{
+    position: absolute;
+    color: #ffffff;
+    font-size: 2.2em;
+    bottom: -269%;
+    left: 9.3%;
+    background-color: #0095eba2;
+    padding-left: 10%;
+    padding-right: 5%;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    text-shadow: 0px 0px 10px #000;
+    box-shadow: 0px 0px 9px #000;
+}
+.guidedogsBannerText{
+    position: absolute;
+    color: #ffffff;
+    font-size: 2.2em;
+    bottom: -326%;
+    left: 9.3%;
+    background-color: #02165db2;
+    padding-left: 20%;
+    padding-right: 5%;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    text-shadow: 0px 0px 10px #000;
+    box-shadow: 0px 0px 9px #000;
+}
+.hfhBannerText{
+    position: absolute;
+    color: #ffffff;
+    font-size: 2.2em;
+    bottom: -383%;
+    left: 9.3%;
+    background-color: #ffbf5e9c;
+    padding-left: 20%;
+    padding-right: 5%;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    text-shadow: 0px 0px 10px #000;
+    box-shadow: 0px 0px 9px #000;
+}
+.mmcsBannerText{
+    position: absolute;
+    color: #ffffff;
+    font-size: 2.2em;
+    bottom: -439%;
+    left: 9.3%;
+    background-color: #018925a1;
+    padding-left: 20%;
+    padding-right: 5%;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    text-shadow: 0px 0px 10px #000;
+    box-shadow: 0px 0px 9px #000;
+}
+.oxfamBannerText{
+    position: absolute;
+    color: #ffffff;
+    font-size: 2.2em;
+    bottom: -495%;
+    left: 9.3%;
+    background-color: #68a638c2;
+    padding-left: 20%;
+    padding-right: 5%;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    text-shadow: 0px 0px 10px #000;
+    box-shadow: 0px 0px 9px #000;
+}
+.rblBannerText{
+    position: absolute;
+    color: #ffffff;
+    font-size: 2.2em;
+    bottom: -552%;
+    left: 9.3%;
+    background-color: #e42727a6;
+    padding-left: 20%;
+    padding-right: 5%;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    text-shadow: 0px 0px 10px #000;
+    box-shadow: 0px 0px 9px #000;
+}
+.rspcaBannerText{
+    position: absolute;
+    color: #ffffff;
+    font-size: 2.2em;
+    bottom: -608%;
+    left: 9.3%;
+    background-color: #092179b2;
+    padding-left: 10%;
+    padding-right: 5%;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    text-shadow: 0px 0px 10px #000;
+    box-shadow: 0px 0px 9px #000;
+}
+.unicefBannerText{
+    position: absolute;
+    color: #ffffff;
+    font-size: 2.2em;
+    bottom: -665%;
+    left: 9.3%;
+    background-color: #6f98feb9;
+    padding-left: 20%;
+    padding-right: 5%;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    text-shadow: 0px 0px 10px #000;
+    box-shadow: 0px 0px 9px #000;
+}
+.wwfBannerText{
+    position: absolute;
+    color: #ffffff;
+    font-size: 2.2em;
+    bottom: -721%;
+    left: 9.3%;
+    background-color: #ffffff98;
+    padding-left: 20%;
+    padding-right: 5%;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    text-shadow: 0px 0px 10px #000;
+    box-shadow: 0px 0px 9px #000;
+}
+.woodlandtrustBannerText{
+    position: absolute;
+    color: #ffffff;
+    font-size: 2.2em;
+    bottom: -778%;
+    left: 9.3%;
+    background-color: #304a23be;
+    padding-left: 20%;
+    padding-right: 5%;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    text-shadow: 0px 0px 10px #000;
+    box-shadow: 0px 0px 9px #000;
+}
+.AlzheimersBanner{
+    border: 3px solid #000;
+    height: 500px;
+    width: 1550px;
+}
+.AlzheimersBannerIcon{
+    position: absolute;
+    width: 10%;
+    margin-left: 2%;
+    margin-top: 7%;
+    border-radius: 100%;
+    border: 5px solid #000;
+    box-shadow: 0 0 30px #ffffff;
+    height: 20%;
+}
+/*---Donate Page Section (End)---*/
+
+/*---Volunteer Page Section (Start)---*/
+.volunteerSection{
+    background-color: #ffffff;
+    margin-top: 40px;
+    box-shadow: 0px 0px 30px 12px rgb(255, 255, 255);
+    padding-bottom: 5%;
+}
+.volunteerMainHeader{
+    display: flex;
+    justify-content: center;
+    font-size: 2em;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    font-family: Arial Narrow;
+    font-weight: bold;
+    text-decoration: underline;
+}
+.alzheimersVolunteerOverlay{
+    position: absolute;
+    background-color: #641ed486;
+    color: #00000000;
+    padding: 100px;
+    padding-bottom: 287px;
+    border-top-right-radius: 50%;
+    border-bottom-right-radius: 50%;
+}
+.volunteerFlex{
+    display: flex;
+    justify-content: center;
+}
+.volunteerContents{
+    margin: 10px;
+}
+.volBanner{
+    border: 3px solid #000000;
+}
+.volLogo{
+    position: absolute;
+    border-radius: 50%;
+    margin-top: 10px;
+    margin-left: 10px;
+    border: 3px solid #000;
+}
+.alzVolunteerTitle{
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    margin-top: -74px;
+    margin-left: 3px;
+    font-size: 2em;
+    color: #ffffff; 
+    background-color: #4f1e799d;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    text-shadow: 0px 0px 10px #000;
+    font-family: Arial Narrow;
+    font-weight: bold;
+}
+.bhfVolunteerTitle{
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    margin-top: -74px;
+    margin-left: 3px;
+    font-size: 2em;
+    color: #ffffff; 
+    background-color: #ee1a2f9d;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    text-shadow: 0px 0px 10px #000;
+    font-family: Arial Narrow;
+    font-weight: bold;
+}
+.brcVolunteerTitle{
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    margin-top: -74px;
+    margin-left: 3px;
+    font-size: 2em;
+    color: #000000; 
+    background-color: #ffffffcb;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    text-shadow: 0px 0px 0px #000;
+    font-family: Arial Narrow;
+    font-weight: bold;
+}
+.crVolunteerTitle{
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    margin-top: -74px;
+    margin-left: 3px;
+    font-size: 2em;
+    color: #ffffff; 
+    background-color: #ec008e94;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    text-shadow: 0px 0px 10px #000;
+    font-family: Arial Narrow;
+    font-weight: bold;
+}
+.cinVolunteerTitle{
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    margin-top: -74px;
+    margin-left: 3px;
+    font-size: 2em;
+    color: #000000; 
+    background-color: #ffcf2298;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    text-shadow: 0px 0px 0px #000;
+    font-family: Arial Narrow;
+    font-weight: bold;
+}
+.goshfcVolunteerTitle{
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    margin-top: -74px;
+    margin-left: 3px;
+    font-size: 2em;
+    color: #ffffff; 
+    background-color: #0693d4a2;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    text-shadow: 0px 0px 10px #000;
+    font-family: Arial Narrow;
+    font-weight: bold;
+}
+.gdVolunteerTitle{
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    margin-top: -74px;
+    margin-left: 3px;
+    font-size: 2em;
+    color: #ffffff; 
+    background-color: #02165dbb;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    text-shadow: 0px 0px 10px #000;
+    font-family: Arial Narrow;
+    font-weight: bold;
+}
+.hfhVolunteerTitle{
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    margin-top: -74px;
+    margin-left: 3px;
+    font-size: 2em;
+    color: #000000; 
+    background-color: #c39e74d2;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    text-shadow: 0px 0px 0px #000;
+    font-family: Arial Narrow;
+    font-weight: bold;
+}
+.mmcsVolunteerTitle{
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    margin-top: -74px;
+    margin-left: 3px;
+    font-size: 2em;
+    color: #ffffff; 
+    background-color: #018925a6;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    text-shadow: 0px 0px 10px #000;
+    font-family: Arial Narrow;
+    font-weight: bold;
+}
+.oxfamVolunteerTitle{
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    margin-top: -74px;
+    margin-left: 3px;
+    font-size: 2em;
+    color: #ffffff; 
+    background-color: #66a638ab;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    text-shadow: 0px 0px 10px #000;
+    font-family: Arial Narrow;
+    font-weight: bold;
+}
+.rblVolunteerTitle{
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    margin-top: -74px;
+    margin-left: 3px;
+    font-size: 2em;
+    color: #ffffff; 
+    background-color: #e42727b4;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    text-shadow: 0px 0px 10px #000;
+    font-family: Arial Narrow;
+    font-weight: bold;
+}
+.rspcaVolunteerTitle{
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    margin-top: -74px;
+    margin-left: 3px;
+    font-size: 2em;
+    color: #ffffff; 
+    background-color: #092179ab;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    text-shadow: 0px 0px 10px #000;
+    font-family: Arial Narrow;
+    font-weight: bold;
+}
+.unicefVolunteerTitle{
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    margin-top: -74px;
+    margin-left: 3px;
+    font-size: 2em;
+    color: #ffffff; 
+    background-color: #6f97fe;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    text-shadow: 0px 0px 10px #000;
+    font-family: Arial Narrow;
+    font-weight: bold;
+}
+.woodlandtrustVolunteerTitle{
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    margin-top: -74px;
+    margin-left: 3px;
+    font-size: 2em;
+    color: #ffffff; 
+    background-color: #304a23d5;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    text-shadow: 0px 0px 10px #000;
+    font-family: Arial Narrow;
+    font-weight: bold;
+}
+.wwfVolunteerTitle{
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    margin-top: -74px;
+    margin-left: 3px;
+    font-size: 2em;
+    color: #000000; 
+    background-color: #ffffffd5;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    text-shadow: 0px 0px 0px #000;
+    font-family: Arial Narrow;
+    font-weight: bold;
+}
+/*---Volunteer Page Section (End)---*/
+
+/*---Media Queries of (1440px Width)---*/
+@media only screen and (max-width: 1440px){
+    /*---All Hyperlinked Content (Start)---*/
+    .imageScrollerHyperlink > img{
+        border: 4px solid #000;
+        inline-size: 90%;
+        max-width: 260px;
+        height: 250px;
+    }
+    .imageScrollerHyperlink{
+        text-decoration: none;
+        color: #000
+    }
+    .imageScrollerHyperlink:hover{
+        filter: brightness(50%);
+        transition: 0.3s;
+    }
+    .imageScrollerHyperlink > figcaption{
+        display: flex;
+        justify-content: center;
+        font-size: 1.2em;
+        font-family: Arial Narrow;
+        padding-left: 0px;
+        padding-right: 0px;
+        width: 90%;
+    }
+    .fundScrollerHyperlink > img{
+        width: 900px;
+    }
+    .fundPageHyperlink > img{
+        width: 420px;
+        height: 230px;
+    }
+    .donPageHyperlink > img{
+        border-radius: 50%;
+        border: 4px solid #000;
+        margin: 10px;
+    }
+    /*---All Hyperlinked Content (End)---*/
+
+    /*---Index Page Section (Start)---*/
+    .navBar{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        padding-top: 0px;
+    }
+    .middleNav{
+        display: none;
+    }
+    .middleNavMacScreen{
+        display: block;
+        width: 70%;
+        text-align: center;
+    }
+    .dropbtn{
+        font-family: Arial Narrow;
+        font-weight: bold;
+        cursor: pointer;
+    }
+    .dropbtn:hover{
+        color: #ffffff;
+        text-decoration: underline;
+    }
+    .dropdown-content{
+        display: none;
+        position: absolute;
+        background-color: rgb(255, 255, 255);
+        min-width: 160px;
+        margin-left: -260%;
+        z-index: 1;
+        box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+        border: 6px solid #000;
+    }
+    .dropdown-content a{
+        padding: 9px 66px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        text-decoration: none;
+        display: block;
+        font-size: 25px;
+    }
+    .dropdownH1{
+        margin-top: 0px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        font-size: 32px;
+        text-decoration: underline;
+        font-family: Arial Narrow;
+        font-weight: bold;
+        background-color: #000;
+        color: #ffffff;
+        color: #00000000;
+    }
+    .topleftIcon{
+        width: 100px;
+        margin-top: 10px;
+    }
+    .image-element > img{
+        max-width: 260px;
+        height: 250px;
+    }
+    .charity-element > img{
+        width: 260px;
+        height: 260px;
+    }
+    .charity-element > figcaption{
+        margin-left: 0px;
+    }
+    .fund-element > img{
+        width: 900px;
+    }
+    .charityHeaders{
+        width: 100%;
+        font-size: 30px;
+        padding-right: 28%;
+    }
+    h3{
+        display: flex;
+        justify-content: center;
+    }
+    /*---Index Page Section (End)---*/
+
+    /*---Shop Page Section (Start)---*/
+    .shopSection{
+        display: none;
+    }
+    .shopSectionSmallWindow{
+        display: block;
+        background-color: #ffffff;
+    }
+    #myBtnContainer{
+        display: flex;
+        justify-content: center;
+        padding-bottom: 30px;
+        border-bottom: 6px solid #000;
+        background-color: #dfdfdf;
+    }
+    .mensItems, .womensItems, .unisexItems, .furniture, .entertainment, .other{
+        font-size: 15px;
+    }
+    .mensItems > button, .womensItems > button, .unisexItems > button, .furniture > button, .entertainment > button, .other > button{
+        font-size: 15px;
+        margin: 2px;
+        margin-bottom: 7px;
+        padding: 5px;
+        width: 100%;
+        justify-content: center;
+    }
+    .content{
+        background-color: #00000000;
+    }
+    .row{
+        display: flex;
+        justify-content: center;
+    }
+    .rowSW{
+        display: flex;
+        justify-content: center;
+        margin: 10px;
+    }
+    .column{
+        margin: 10px;
+    }
+    .content > figcaption{
+        font-size: 16px;
+    }
+    .buyBtn{
+        background-color: #1a8100;
+        color: #ffffff;
+        padding: 5px;
+        border-radius: 20%;
+        font-size: 1.2em;
+        font-weight: bold;
+        margin: 1px;
+        margin-bottom: 0px;
+        margin-top: -10px;
+        border: 2px solid #000;
+        cursor: pointer;
+    }
+    /*---Shop Page Section (End)---*/
+
+    /*---Donate Page Section (Start)---*/
+    .donateSection{
+        display: none;
+    }
+    .donateSectionSmallWindow{
+        display: block;
+        background-color: #ffffff;
+        margin-top: 25px;
+        padding-top: 25px;
+        padding-bottom: 85px;
+        box-shadow: 0px 0px 30px 12px rgb(255, 255, 255);
+    }
+    .charityTabHeaders{
+        font-size: 2.5em;
+        font-family: Arial Narrow;
+        font-weight: bold;
+    }
+    .smallCharityIcon{
+        display: flex;
+        justify-content: center;
+    }
+    .smallCharityIcon > img{
+        border-radius: 50%;
+        border: 5px solid #000;
+        margin-left: 20px;
+        margin-right: 20px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+    /*---Donate Page Section (Start)---*/
+
+    /*---Footer Section (Start)---*/
+    .footerImages > img{
+        width: 50px;
+        height: 50px;
+    }
+    .footerHyperlink > img{
+        width: 50px;
+        height: 50px;
+    }
+    /*---Footer Section (End)---*/
+
+    /*---Fundraiser Page Section (Start)---*/
+    .contentFund > img{
+        width: 420px;
+        height: 230px;
+    }
+    .contentFund .fundRowsTitles{
+        font-size: 1.3em;
+    }
+    /*---Fundraiser Page Section (End)---*/
+
+    /*---Volunteering Page Section (Start)---*/
+    .volBanner{
+        width: 435px;
+    }
+    /*---Volunteering Page Section (End)---*/
+}
+/*---Media Queries of (425px Width)---*/
+@media only screen and (max-width: 425px){
+    /*---All Hyperlinked Content (Start)---*/
+    .imageScrollerHyperlink{
+        text-decoration: none;
+        color: #000
+    }
+    .imageScrollerHyperlink:hover{
+        filter: brightness(50%);
+        transition: 0.3s;
+    }
+    .imageScrollerHyperlink > figcaption{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        font-size: 11px;
+        font-family: Arial Narrow;
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+    .imageScrollerHyperlink > img{
+        width: 170px;
+        height: 160px;
+    }
+    .image-element{
+        margin: 10px;
+    }
+    .charityScrollerHyperlink > img{
+        width: 100px;
+        height: 100px;
+    }
+    .fundScrollerHyperlink > img{
+        width: 340px;
+        height: 220px;
+        margin-left: 17px;
+    }
+    .fundScrollerHyperlink > figcaption{
+        margin-left: 21px;
+        margin-top: -53px;
+    }
+    .fundPageHyperlink > img{
+        width: 335px;
+        height: 200px;
+    }
+    /*---All Hyperlinked Content (End)---*/
+
+    /*---Donate Page Section (Start)---*/
+    .donateSectionSmallWindow{
+        display: none;
+    }
+    /*---Donate Page Section (End)---*/
+
+    /*---NavBar Mobile Dropdown (Start)---*/
+    .navBar {
+        display: none;
+    }
+    .mobile-container{
+        display: flex;
+        justify-content: center;
+        max-width: 480px;
+        margin: auto;
+        color: white;
+        border-radius: 10px;
+    }
+    .topnav{
+        overflow: hidden;
+    }
+    .topnav #myLinks{
+        display: none;
+    }
+    #myLinks{
+        position: absolute;
+        background-color: rgb(31, 31, 31);
+        width: 100%;
+        margin-top: -45px;
+    }
+    #myLinks a{
+        font-size: 35px;
+        text-align: center;
+        padding-top: 30px;
+        padding-bottom: 30px;
+        font-family: Arial Narrow;
+        font-weight: bold;
+
+    }
+    #myLinks a:hover{
+        background-color: #000000;
+        color: #ffffff;
+    }
+    /*---NavBar Mobile Dropdown (End)---*/
+
+    /*---Shop Dropdown Menu (Start)---*/
+    .dropdown{
+        position: relative;
+        display: inline-block;
+    }
+    .topnav a{
+        color: white;
+        text-decoration: none;
+        font-size: 17px;
+        display: block;
+    }
+    .topnav a.icon{
+        background-color: #000;
+        display: block;
+        position: absolute;
+        right: 0;
+        top: 0;
+        font-size: 40px;
+        padding: 12px 15px;
+    }
+    .mobileLogo{
+        width: 160px;
+        padding-top: 5px
+    }
+    .topnav input[type=text] {
+        padding-top: 15px;
+        padding-bottom: 15px;
+        padding-left: 15px;
+        padding-right: 15px;
+        margin-top: 8px;
+        font-size: 20px;
+        border: none;
+        border-top: 2px solid;
+        border-bottom: 2px solid;
+        border-right: 2px solid;
+        border-radius: 0px 50px 50px 0px;
+        background: #ffffff;
+        color: #000000;
+      }
+    .topnav .search-container button{
+        padding-bottom: 9px;
+        padding-top: 9.5px;
+        padding-left: 25px;
+        padding-right: 15px;
+        margin-top: 8px;
+        margin-right: 0px;
+        background: #ffffff;
+        color: #000000;
+        font-size: 30px;
+        border: none;
+        cursor: pointer;
+        float: left;
+        border-radius: 50px 0px 0px 50px;
+        border-left: 2px solid;
+        border-top: 2px solid;
+        border-bottom: 2px solid;
+      }
+      .scrollerHeader{
+        font-size: 20px;
+        display: flex;
+        justify-content: center;
+        padding-bottom: 10px;
+      }
+      .image-scroller{
+        display: none;
+      }
+      .image-scrollerMobile{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        padding-top: 10px;
+      }
+      .image-element > img{
+        width: 190px;
+        height: 180px;
+      }
+      .pClothingHeaders{
+        font-size: 15px;
+      }
+      .charity-scroller{
+        display: none;
+      }
+      .charity-scrollerMobile{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+      }
+      .charity-element > img{
+        width: 100px;
+        height: 100px;
+      }
+      .charityHeaders{
+        display: none;
+      }
+      .fund-scroller{
+        display: none;
+      }
+      .fund-scrollerMobile{
+        width: 100%;
+        display: block;
+      }
+      .fund-element > img{
+        width: 380px;
+        height: 220px;
+      }
+      .fund-element{
+        display: flex;
+        justify-content: center;
+      }
+      .fundHeaders{
+        background-color: rgba(56, 56, 56, 0.733);
+        position: absolute;
+        font-size: 23px;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        margin-top: -13%;
+        margin-left: 10px;
+        color: #ffffff;
+        font-weight: 200;
+        display: flex;
+        justify-content: center;
+      }
+    /*---Shop Dropdown Menu (End)---*/
+
+    /*---Footer Section (Start)---*/
+    .footerSection{
+        background-color: rgb(43, 43, 43);
+        display: flex;
+        justify-content: center;
+        padding-bottom: 10px;
+        padding-left: 30px;
+        padding-right: 30px;
+        padding-top: 10px;
+    }
+    .footerContent{
+        width: 60%;
+        padding: 15px;
+        border-top: 4px solid #c4c4c4;
+        border-right: 4px solid #c4c4c4;
+        border-top-right-radius: 20px;
+        color: #c4c4c4;
+        background-color: rgb(31, 31, 31);
+    }
+    .fContactHeader{
+        font-size: 7px;
+        font-weight: bold;
+        padding-bottom: 15px;
+        text-decoration: 1px underline;
+        font-family: Arial Narrow;
+    }
+    .fContactContent{
+        font-size: 6px;
+        padding-top: 15px;
+        font-family: Arial Narrow;
+    }
+    .footerImages > img{
+        border-radius: 40px 40px;
+    }
+    .fImageContent{
+        display: none;
+    }
+    .fImageContentMobile{
+        display: flex;
+    }
+    .footerImages > img{
+        width: 20px;
+        height: 20px;
+    }
+    .footerHyperlink > img{
+        width: 20px;
+        height: 20px;
+    }
+    /*---Footer Section (End)---*/
+
+/*---Shop Page Section (Start)---*/
+.shopSection{
+    display: none;
+}
+.shopSectionSmallWindow{
+    display: none;
+}
+.shopSectionMobile{
+    display: block;
+    background-color: #ffffff;
+}
+#myBtnContainer{
+    display: flex;
+    justify-content: center;
+    padding-bottom: 0px;
+    border-bottom: 6px solid #000;
+    background-color: #dddddd;
+    margin-bottom: -30px;
+}
+.mensItems, .womensItems, .unisexItems{
+    width: 100%;
+    font-size: 15px;
+    border-right: 4px solid #00000000;
+    
+}
+.furniture, .entertainment, .other{
+    width: 100%;
+    font-size: 15px;
+    border-right: 4px solid #00000000;
+}
+.other{
+    width: 100%;
+    font-size: 15px;
+    border-right: 4px solid #00000000;
+    margin-bottom: 25px;
+}
+.mensItems > button, .womensItems > button, .unisexItems > button, .furniture > button, .entertainment > button, .other > button{
+    font-size: 15px;
+    margin: 2px;
+    margin-bottom: 7px;
+    padding: 5px;
+    width: 100%;
+    justify-content: center;
+}
+.content{
+    background-color: #00000000;
+}
+.row{
+    display: flex;
+    justify-content: center;
+}
+.content > figcaption{
+    font-size: 22px;
+    font-weight: bold;
+    font-family: Arial Narrow;
+    margin-bottom: -40px;
+}
+.buyBtn{
+    background-color: #1a8100;
+    color: #ffffff;
+    padding: 5px;
+    border-radius: 20%;
+    font-size: 1em;
+    font-weight: bold;
+    margin: 1px;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    border: 2px solid #000;
+    cursor: pointer;
+}
+/*---Shop Page Section (End)---*/
+
+/*---Fundraise Section (Start)---*/
+.btnFund > img{
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    margin-top: -1px;
+    margin-bottom: -4px;
+}
+.contentFund > img{
+    width: 375px;
+    height: 200px;
+}
+.contentFund .fundRowsTitles{
+    font-size: 17px;
+    margin-bottom: -2px;
+    padding-bottom: 10px;
+}
+.fundRowsTitlesLast{
+    font-family: Arial Narrow;
+    display: flex;
+    justify-content: center;
+    font-size: 1.2em;
+    margin-bottom: 20px;
+}
+.rowFundMobile{
+    background-color: #ffffff;
+    display: block;
+}
+.rows-ContainerBlackLine{
+    margin-bottom: -15px;
+    padding-bottom: 40px;
+}
+.rowFund{
+    display: none;
+}
+/*---Fundraise Section (End)---*/
+
+/*---Filter Dropdown Menu (Start)---*/
+#row{
+    margin-top: 45px;
+}
+.content > img{
+    width: 350px;
+    height: 350px;
+}
+.drpdwnMen{
+    justify-content: center;
+    background-color: #000000;
+}
+#drpdwnMen-content, #drpdwnWomen-content, #drpdwnUnisex-content, #drpdwnFurn-content, #drpdwnEnter-content, #drpdwnOther-content{
+    position: relative;
+    width: 100%;
+    justify-content: center;
+    border-bottom: 6px solid #000;
+    background-color: #dddddd;
+    display: none;
+}
+.btn{
+    width: 100%;
+    margin-top: 3px;
+    margin-bottom: 3px;
+    background-color: #666666;
+}
+.btnActive{
+    margin-top: 10px;
+}
+.btn.active{
+    margin-bottom: 0px;
+}
+.h3{
+    display: flex;
+    justify-content: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-size: 25px;
+    background-color: #ffffff;
+    width: 100%;
+    font-weight: bold;
+}
+.h3:hover{
+    background-color: #AEE8D5;
+}
+h3{
+    color: rgb(255, 255, 255);
+    background-color: rgb(39, 39, 39);
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-top: 3px;
+    margin-bottom: 3px;
+    text-decoration: underline 3px solid #ffffff;
+    font-size: 1.5em;
+}
+/*---Filter Dropdown Menu (SEnd)---*/
+
+/*---Volunteer Page Section (Start)---*/
+.volunteerSection{
+    display: none;
+}
+.volunteerSectionMobile{
+    display: block;
+    background-color: rgb(255, 255, 255);
+    margin-top: 60px;
+    box-shadow: 10px 0px 30px 15px #ffffff;
+}
+.volunteerMainHeader{
+    font-size: 1.5em;
+}
+.volBanner{
+    width: 335px;
+    height: 200px;
+}
+.volPageHyperlink > figcaption{
+    font-size: 15px;
+    margin-top: -12.7%;
+}
+.volLogo{
+    width: 70px;
+    height: 70px;
+}
+.volunteerContents > figcaption{
+    font-size: 1.5em;
+    margin-top: -64px;
+}
+
+.volunteerSection{
+    background-color: #ffffff;
+    margin-top: 40px;
+    box-shadow: 0px 0px 30px 12px rgb(255, 255, 255);
+    padding-bottom: 5%;
+}
+.volunteerMainHeader{
+    display: flex;
+    justify-content: center;
+    font-size: 1.3em;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    font-family: Arial Narrow;
+    font-weight: bold;
+    text-decoration: underline;
+}
+.alzheimersVolunteerOverlay{
+    position: absolute;
+    background-color: #641ed486;
+    color: #00000000;
+    padding: 100px;
+    padding-bottom: 287px;
+    border-top-right-radius: 50%;
+    border-bottom-right-radius: 50%;
+}
+.volunteerFlex{
+    display: flex;
+    justify-content: center;
+}
+.volunteerContents{
+    margin: 10px;
+}
+.volBanner{
+    border: 3px solid #000000;
+}
+.volLogo{
+    position: absolute;
+    border-radius: 50%;
+    margin-top: 10px;
+    margin-left: 10px;
+    border: 3px solid #000;
+}
+.alzVolunteerTitle{
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    margin-top: -74px;
+    margin-left: 3px;
+    font-size: 2em;
+    color: #4f1e79; 
+    background-color: #4f1e7900;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    text-shadow: 0px 0px 3px #ffffff;
+    font-family: Arial Narrow;
+    font-weight: bold;
+}
+.bhfVolunteerTitle{
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    margin-top: -74px;
+    margin-left: 3px;
+    font-size: 2em;
+    color: #ee1a2f; 
+    background-color: #ee1a2f00;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    text-shadow: 0px 0px 3px #000000;
+    font-family: Arial Narrow;
+    font-weight: bold;
+}
+.brcVolunteerTitle{
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    margin-top: -74px;
+    margin-left: 3px;
+    font-size: 2em;
+    color: #000000; 
+    background-color: #ffffff00;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    text-shadow: 0px 0px 3px #ffffff;
+    font-family: Arial Narrow;
+    font-weight: bold;
+}
+.crVolunteerTitle{
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    margin-top: -74px;
+    margin-left: 3px;
+    font-size: 2em;
+    color: #ffffff; 
+    background-color: #ec008e00;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    text-shadow: 0px 0px 3px #000000;
+    font-family: Arial Narrow;
+    font-weight: bold;
+}
+.cinVolunteerTitle{
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    margin-top: -74px;
+    margin-left: 3px;
+    font-size: 2em;
+    color: #ffcf22; 
+    background-color: #ffcf2200;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    text-shadow: 0px 0px 3px #000000;
+    font-family: Arial Narrow;
+    font-weight: bold;
+}
+.goshfcVolunteerTitle{
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    margin-top: -74px;
+    margin-left: 3px;
+    font-size: 2em;
+    color: #ffffff; 
+    background-color: #0693d400;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    text-shadow: 0px 0px 3px #000000;
+    font-family: Arial Narrow;
+    font-weight: bold;
+}
+.gdVolunteerTitle{
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    margin-top: -74px;
+    margin-left: 3px;
+    font-size: 2em;
+    color: #031e7e; 
+    background-color: #02165d00;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    text-shadow: 0px 0px 3px #ffffff;
+    font-family: Arial Narrow;
+    font-weight: bold;
+}
+.hfhVolunteerTitle{
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    margin-top: -74px;
+    margin-left: 3px;
+    font-size: 2em;
+    color: #ffffff; 
+    background-color: #c39e7400;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    text-shadow: 0px 0px 3px #000000;
+    font-family: Arial Narrow;
+    font-weight: bold;
+}
+.mmcsVolunteerTitle{
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    margin-top: -74px;
+    margin-left: 3px;
+    font-size: 2em;
+    color: #22db54; 
+    background-color: #01af2f00;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    text-shadow: 0px 0px 3px #000000;
+    font-family: Arial Narrow;
+    font-weight: bold;
+}
+.oxfamVolunteerTitle{
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    margin-top: -74px;
+    margin-left: 3px;
+    font-size: 2em;
+    color: #70e020; 
+    background-color: #75ce3500;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    text-shadow: 0px 0px 3px #000;
+    font-family: Arial Narrow;
+    font-weight: bold;
+}
+.rblVolunteerTitle{
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    margin-top: -74px;
+    margin-left: 3px;
+    font-size: 2em;
+    color: #ffffff; 
+    background-color: #e4272700;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    text-shadow: 0px 0px 3px #000000;
+    font-family: Arial Narrow;
+    font-weight: bold;
+}
+.rspcaVolunteerTitle{
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    margin-top: -74px;
+    margin-left: 3px;
+    font-size: 2em;
+    color: #092caa; 
+    background-color: #09217900;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    text-shadow: 0px 0px 3px #ffffff;
+    font-family: Arial Narrow;
+    font-weight: bold;
+}
+.unicefVolunteerTitle{
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    margin-top: -74px;
+    margin-left: 3px;
+    font-size: 2em;
+    color: #ffffff; 
+    background-color: #6f98fe00;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    text-shadow: 0px 0px 3px #000;
+    font-family: Arial Narrow;
+    font-weight: bold;
+}
+.woodlandtrustVolunteerTitle{
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    margin-top: -74px;
+    margin-left: 3px;
+    font-size: 2em;
+    color: #2b4120; 
+    background-color: #304a2300;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    text-shadow: 0px 0px 3px #ffffff;
+    font-family: Arial Narrow;
+    font-weight: bold;
+}
+.wwfVolunteerTitle{
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    margin-top: -74px;
+    margin-left: 3px;
+    font-size: 2em;
+    color: #000000; 
+    background-color: #ffffff00;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    text-shadow: 0px 0px 3px #ffffff;
+    font-family: Arial Narrow;
+    font-weight: bold;
+}
+/*---Volunteer Page Section (End)---*/
+
+/*---Donate Page Section (Start)---*/
+.charityTabHeaders{
+    font-size: 29px;
+}
+.AlzheimersBanner{
+    display: none;
+}
+.AlzheimersBannerIcon{
+    width: 100px;
+}
+.AlzheimersBannerText, .bhfBannerText, .brcBannerText, .childreninneedBannerText, .cancerresearchBannerText, .goshfcBannerText, .guidedogsBannerText, .hfhBannerText, .mmcsBannerText, .oxfamBannerText, .rblBannerText, .rspcaBannerText, .unicefBannerText, .wwfBannerText, .woodlandtrustBannerText{
+    display: none;
+}
+.AlzheimersBannerIcon{
+    display: none;
+}
+.charityIconMobileSection{
+    justify-content: center;
+}
+.charityIconRow > img{
+    width: 330px;
+    height: 330px;
+    border-radius: 50%;
+    border: 5px solid #000;
+    margin: 10px;
+    margin-top: 20px;
+}
+.charityIconRow{
+    display: flex;
+    justify-content: center;
+}
+.donateSection{
+    display: none;
+    width: 100%;
+    background-color: #ffffff;
+    box-shadow: 0 0 50px #ffffff;
+    margin-top: 50px;
+}
+.donateSectionMobile{
+    display: block;
+    width: 100%;
+    background-color: #ffffff;
+    box-shadow: 0 0 50px #ffffff;
+    margin-top: 50px;
+}
+.alzheimersIconOverlay{
+    background-color: #4f1e79c2;
+    width: 332px;
+    height: 332px;
+    border-radius: 50%;
+    position: absolute;
+    margin-top: 24.4px;
+}
+.alzheimersIconOverlayTxt{
+    color: #ffffff;
+    font-size: 2em;
+    display: flex;
+    justify-content: center;
+    margin-top: 150px;
+    text-shadow: 0px 0px 8px #000000;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.bhfIconOverlay{
+    background-color: #ee1a2f9f;
+    width: 332px;
+    height: 332px;
+    border-radius: 50%;
+    position: absolute;
+    margin-top: 25.4px;
+}
+.bhfIconOverlayTxt{
+    color: #ffffff;
+    font-size: 1.7em;
+    display: flex;
+    justify-content: center;
+    margin-top: 150px;
+    text-shadow: 0px 0px 8px #000000;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.brcIconOverlay{
+    background-color: #ffffffd3;
+    width: 332px;
+    height: 332px;
+    border-radius: 50%;
+    position: absolute;
+    margin-top: 25.4px;
+}
+.brcIconOverlayTxt{
+    color: #000000;
+    font-size: 2.3em;
+    display: flex;
+    justify-content: center;
+    margin-top: 150px;
+    text-shadow: 0px 0px 0px #000000;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.cinIconOverlay{
+    background-color: #ffcf22ab;
+    width: 332px;
+    height: 332px;
+    border-radius: 50%;
+    position: absolute;
+    margin-top: 25.4px;
+}
+.cinIconOverlayTxt{
+    color: #000000;
+    font-size: 2.5em;
+    display: flex;
+    justify-content: center;
+    margin-top: 150px;
+    text-shadow: 0px 0px 0px #000000;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.crIconOverlay{
+    background-color: #ec008e86;
+    width: 332px;
+    height: 332px;
+    border-radius: 50%;
+    position: absolute;
+    margin-top: 24.4px;
+}
+.crIconOverlayTxt{
+    color: #ffffff;
+    font-size: 2.4em;
+    display: flex;
+    justify-content: center;
+    margin-top: 150px;
+    text-shadow: 0px 0px 8px #000000;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.goshfcIconOverlay{
+    background-color: #0095eba2;
+    width: 332px;
+    height: 332px;
+    border-radius: 50%;
+    position: absolute;
+    margin-top: 24.4px;
+}
+.goshfcIconOverlayTxt{
+    color: #ffffff;
+    font-size: 3em;
+    display: flex;
+    justify-content: center;
+    margin-top: 145px;
+    text-shadow: 0px 0px 8px #000000;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.gdIconOverlay{
+    background-color: #02165db2;
+    width: 332px;
+    height: 332px;
+    border-radius: 50%;
+    position: absolute;
+    margin-top: 25.4px;
+}
+.gdIconOverlayTxt{
+    color: #ffffff;
+    font-size: 3.2em;
+    display: flex;
+    justify-content: center;
+    margin-top: 145px;
+    text-shadow: 0px 0px 8px #000000;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.hfhIconOverlay{
+    background-color: #ffbf5ec2;
+    width: 332px;
+    height: 332px;
+    border-radius: 50%;
+    position: absolute;
+    margin-top: 24.4px;
+}
+.hfhIconOverlayTxt{
+    color: #000000;
+    font-size: 2.6em;
+    display: flex;
+    justify-content: center;
+    margin-top: 150px;
+    text-shadow: 0px 0px 0px #000000;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.mmcsIconOverlay{
+    background-color: #018925a1;
+    width: 332px;
+    height: 332px;
+    border-radius: 50%;
+    position: absolute;
+    margin-top: 24.4px;
+}
+.mmcsIconOverlayTxt{
+    color: #ffffff;
+    font-size: 1.6em;
+    display: flex;
+    justify-content: center;
+    margin-top: 150px;
+    text-shadow: 0px 0px 8px #000000;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.oxfamIconOverlay{
+    background-color: #68a638c2;
+    width: 332px;
+    height: 332px;
+    border-radius: 50%;
+    position: absolute;
+    margin-top: 25.4px;
+}
+.oxfamIconOverlayTxt{
+    color: #ffffff;
+    font-size: 3.2em;
+    display: flex;
+    justify-content: center;
+    margin-top: 145px;
+    text-shadow: 0px 0px 8px #000000;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.rblIconOverlay{
+    background-color: #e42727a6;
+    width: 332px;
+    height: 332px;
+    border-radius: 50%;
+    position: absolute;
+    margin-top: 24.4px;
+}
+.rblIconOverlayTxt{
+    color: #ffffff;
+    font-size: 2em;
+    display: flex;
+    justify-content: center;
+    margin-top: 150px;
+    text-shadow: 0px 0px 8px #000000;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.rspcaIconOverlay{
+    background-color: #092179b2;
+    width: 332px;
+    height: 332px;
+    border-radius: 50%;
+    position: absolute;
+    margin-top: 24.4px;
+}
+.rspcaIconOverlayTxt{
+    color: #ffffff;
+    font-size: 4.2em;
+    display: flex;
+    justify-content: center;
+    margin-top: 135px;
+    text-shadow: 0px 0px 8px #000000;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.unicefIconOverlay{
+    background-color: #6f98feb9;
+    width: 332px;
+    height: 332px;
+    border-radius: 50%;
+    position: absolute;
+    margin-top: 25.4px;
+}
+.unicefIconOverlayTxt{
+    color: #ffffff;
+    font-size: 4.2em;
+    display: flex;
+    justify-content: center;
+    margin-top: 135px;
+    text-shadow: 0px 0px 8px #000000;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.wwfIconOverlay{
+    background-color: #ffffffb9;
+    width: 332px;
+    height: 332px;
+    border-radius: 50%;
+    position: absolute;
+    margin-top: 24.4px;
+}
+.wwfIconOverlayTxt{
+    color: #000000;
+    font-size: 2.1em;
+    display: flex;
+    justify-content: center;
+    margin-top: 150px;
+    text-shadow: 0px 0px 0px #000000;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.woodlandtrustIconOverlay{
+    background-color: #304a23be;
+    width: 332px;
+    height: 332px;
+    border-radius: 50%;
+    position: absolute;
+    margin-top: 25.4px;
+}
+.woodlandtrustIconOverlayTxt{
+    color: #ffffff;
+    font-size: 2.6em;
+    display: flex;
+    justify-content: center;
+    margin-top: 150px;
+    text-shadow: 0px 0px 8px #000000;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+}
+/*---Donate Page Section (End)---*/
+}

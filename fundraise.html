@@ -1,0 +1,528 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SearchRelief - Fundraise</title>
+    <link rel="icon" type="image/x-icon" href="elements/SearchRelief.png">
+    <link rel="stylesheet" href="styles/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script type="text/javascript" src="javascript.js"></script>
+</head>
+
+<body>
+<main>
+<!--NavBar Mobile View (Start)-->
+    <div class="mobile-container">
+        <div class="topnav">
+            <a href="index.html">
+                <img src="elements/SearchRelief.png" alt="SearchReliefLogo" class="mobileLogo" width="65">
+            </a>
+            <div id="myLinks">
+                <a href="shop.html">SHOP</a>
+                <a href="fundraise.html">FUNDRAISE</a>
+                <a href="volunteer.html">VOLUNTEER</a>
+                <a href="donate.html">DONATE</a>
+            </div>
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                <i class="fa fa-bars"></i>
+            </a>
+        </div>
+        
+    </div>
+<!--NavBar Mobile View (End)-->
+
+<!--NavBar Window View (Start)-->
+    <section class="navBar">
+        <div class="leftNav">
+            <a href="index.html">
+            <img src="elements/SearchRelief.png" alt="SearchReliefLogo" width="45" class="topleftIcon">
+            </a>
+        </div>
+
+        <div class="middleNav">
+            <img class="backgroundLogo" src="elements/SearchReliefFADE.png" alt="SearchReliefLogo" width="250">
+            <nav class="nav">
+                <a href="index.html">HOME</a>
+                <a href="shop.html">SHOP</a>
+                <a href="fundraise.html" class="home">FUNDRAISE</a>
+                <a href="volunteer.html">VOLUNTEER</a>
+                <a href="donate.html">DONATE</a>
+            </nav>
+        </div>
+
+<!--NavBar Shop 1440px View (Start)-->
+<div class="middleNavMacScreen">
+    <img class="backgroundLogo" src="elements/SearchReliefFADE.png" alt="SearchReliefLogo" width="250">
+    <nav class="nav">
+        <a href="index.html">HOME</a>
+        <a href="shop.html">SHOP</a>
+        <a href="fundraise.html" class="home">FUNDRAISE</a>
+        <a href="volunteer.html">VOLUNTEER</a>
+        <a href="donate.html">DONATE</a>
+    </nav>
+</div>
+<!--NavBar Shop 1440px View (End)-->
+        <div class="rightNav">
+        </div>
+    </section>
+<!--NavBar Window View (End)-->
+
+<!--Search Bar (Start)-->
+    <div class="topnav">
+        <script async src="https://cse.google.com/cse.js?cx=821bd4c5cd4114cfa">
+        </script>
+        <div class="gcse-search"></div>
+    </div>
+<!--Search Bar (End)-->
+
+<!--Fundraise Section-->
+<section class="fundraiseSection">
+<!--Show All Button-->
+<div class="btnFundActive">
+<button class="btn active" onclick="filterSelection('all')">SHOW ALL</button>
+</div>
+<div class="fundraiserTitle">SELECT YOUR CHARITY</div>
+<!--Charity Logos-->
+<div class="rows-ContainerBlackLine">
+<div id="myBtnFundContainer">
+    <button class="btnFund" onclick="filterSelection('alzheimersscotland')">
+    <img src="elements/AlzheimersScotland Items/AlzheimersScotlandLogo.PNG" alt="Alzheimers Scotland Logo">
+    </button>
+    <button class="btnFund" onclick="filterSelection('bhf')">
+    <img src="elements/BHF Clothing/BHFLogo.png" alt="BHF Logo">
+    </button>
+    <button class="btnFund" onclick="filterSelection('brc')">
+    <img src="elements/BRC Items/BritishRedCrossLogo.png" alt="BRC Logo">
+    </button>
+    <button class="btnFund" onclick="filterSelection('cancerresearchuk')">
+    <img src="elements/Cancer Research Items/Cancer-ResearchLogo.png" alt="Cancer Research Logo">
+    </button>
+    <button class="btnFund" onclick="filterSelection('childreninneed')">
+    <img src="elements/Children In Need Items/ChildrenInNeedLogo.jpg" alt="Children in Need Logo">
+    </button>
+</div>
+<div id="myBtnFundContainer">
+    <button class="btnFund" onclick="filterSelection('goshfc')">
+    <img src="elements/GOSHFC Items/GOSHFCLogo.png" alt="GOSHFC Logo">
+    </button>
+    <button class="btnFund" onclick="filterSelection('guidedogs')">
+    <img src="elements/Guide Dogs Items/guidedogsLogo.png" alt="Guide Dogs Logo">
+    </button>
+    <button class="btnFund" onclick="filterSelection('hfh')">
+    <img src="elements/Help for Heroes Items/HelpforHeroes_logo.png" alt="Help for Heroes Logo">
+    </button>
+    <button class="btnFund" onclick="filterSelection('macmillan')">
+    <img src="elements/MacMillan Items/macmillanLogo.png" alt="MacMillan Logo">
+    </button>
+    <button class="btnFund" onclick="filterSelection('oxfam')">
+    <img src="elements/Oxfam Items/OxfamLogo2.PNG" alt="Oxfam Logo">
+    </button>
+</div>
+<div id="myBtnFundContainer">
+    <button class="btnFund" onclick="filterSelection('rbl')">
+    <img src="elements/Royal British Legion Items/RoyalBritishLegionLogo.jpg" alt="Royal British Legion Logo">
+    </button>
+    <button class="btnFund" onclick="filterSelection('rspca')">
+    <img src="elements/RSPCA Items/RSPCALogo.jpg" alt="RSPCA Logo">
+    </button>
+    <button class="btnFund" onclick="filterSelection('unicef')">
+    <img src="elements/Unicef Items/UnicefLogo.PNG" alt="Unicef Logo">
+    </button>
+    <button class="btnFund" onclick="filterSelection('woodlandtrust')">
+    <img src="elements/Woodland Trust Items/WoodlandTrustLogo.jpg" alt="Woodland Trust Logo">
+    </button>
+    <button class="btnFund" onclick="filterSelection('wwf')">
+    <img src="elements/WWF/WWFLogo.jpg" alt="WWF Logo">
+    </button>
+</div>
+</div>
+<!--Fundraiser Images and Text-->
+<div class="rowFund">
+    <div class="column alzheimersscotland">
+        <div class="contentFund">
+            <a href="https://www.alzscot.org/memorywalk" class="fundPageHyperlink">
+            <img src="elements/AlzheimersScotland Items/fundraise/scotland memory walk.png" alt="Memory Walk" width="608" height="300">
+            <figcaption class="fundRowsTitles">Alzheimers Scotland | Scotland's Memory Walk</figcaption>
+            </a>
+        </div>
+    </div>
+    <div class="column bhf">
+        <div class="contentFund">
+            <a href="https://www.bhf.org.uk/how-you-can-help/events/runs/kew-the-run" class="fundPageHyperlink">
+            <img src="elements/BHF Fundraiser/KewGardens10KHalfMarathon.png" alt="Kew Gardens Run" width="608" height="300">
+            <figcaption class="fundRowsTitles">British Heart Foundation | Kew Gardens</figcaption>
+            </a>
+        </div>
+    </div>
+    <div class="column brc">
+        <div class="contentFund">
+            <a href="https://www.redcross.org.uk/get-involved/fundraising-and-events/10bay-challenge" class="fundPageHyperlink">
+            <img src="elements/BRC Fundraiser/10Bay Challenge Run.PNG" alt="Bay Run Challenge" width="608" height="300">
+            <figcaption class="fundRowsTitles">British Red Cross | 10Bay Run Challenge</figcaption>
+            </a>
+        </div>
+    </div>
+</div>
+<div class="rowFund">
+    <div class="column cancerresearchuk">
+        <div class="contentFund">
+            <a href="https://activities.cancerresearchuk.org/do-your-own-fundraising" class="fundPageHyperlink">
+            <img src="elements/Cancer Research Items/fundraiser/fundraise pack.png" alt="Fundraise Pack" width="608" height="300">
+            <figcaption class="fundRowsTitles">Cancer Research UK | Fundraise Pack</figcaption>
+            </a>
+        </div>
+    </div>
+    <div class="column childreninneed">
+        <div class="contentFund">
+            <a href="https://www.bbcchildreninneed.co.uk/shows/countryfile-ramble/" class="fundPageHyperlink">
+            <img src="elements/Children In Need Items/fundraise/Countryfile Ramble.jpg" alt="Countryfile Ramble" width="608" height="300">
+            <figcaption class="fundRowsTitles">Children in Need | Countryfile Ramble</figcaption>
+            </a>
+        </div>
+    </div>
+    <div class="column goshfc">
+        <div class="contentFund">
+            <a href="https://www.gosh.org/get-involved/fundraising-events/london-triathlon/?gclsrc=aw.ds" class="fundPageHyperlink">
+            <img src="elements/GOSHFC Fundraiser/LondonTriathlon.jpg" alt="London Triathlon" width="608" height="300">
+            <figcaption class="fundRowsTitles">GOSHFC | London Triathlon</figcaption>
+            </a>
+        </div>
+    </div>
+</div>
+<div class="rowFund">
+    <div class="column guidedogs">
+        <div class="contentFund">
+            <a href="https://www.guidedogs.org.uk/how-you-can-help/fundraise/name-a-puppy/" class="fundPageHyperlink">
+            <img src="elements/Guide Dogs Items/fundraise/name a puppy.jpg" alt="Name a Puppy" width="608" height="300">
+            <figcaption class="fundRowsTitles">Guide Dogs | Name a Puppy</figcaption>
+            </a>
+        </div>
+    </div>
+    <div class="column hfh">
+        <div class="contentFund">
+            <a href="https://www.helpforheroes.org.uk/give-support/fundraising-events/skydive-for-heroes/" class="fundPageHyperlink">
+            <img src="elements/Help for Heroes Fundraiser/skydiveForHeroes.jpg" alt="Skydive for heroes" width="608" height="300">
+            <figcaption class="fundRowsTitles">Help for Heroes | Skydiving</figcaption>
+            </a>
+        </div>
+    </div>
+    <div class="column macmillan">
+        <div class="contentFund">
+            <a href="https://www.macmillan.org.uk/fundraise/charity-cycle-rides/etape-loch-ness" class="fundPageHyperlink">
+            <img src="elements/MacMillan Fundraiser/EtapeLochNessCycle.jpg" alt="Etape Loch Ness Cycle" width="608" height="300">
+            <figcaption class="fundRowsTitles">MacMillan | Etape Loch Ness Cycle</figcaption>
+            </a>
+        </div>
+    </div>
+</div>
+<div class="rowFund">
+    <div class="column oxfam">
+        <div class="contentFund">
+            <a href="https://www.oxfam.org.uk/get-involved/fundraise-with-oxfam/fundraising-events/london-marathon/" class="fundPageHyperlink">
+            <img src="elements/Oxfam Fundraiser/LondonMarathon.jpg" alt="London Marathon" width="608" height="300">
+            <figcaption class="fundRowsTitles">Oxfam | London Marathon</figcaption>
+            </a>
+        </div>
+    </div>
+    <div class="column rbl">
+        <div class="contentFund">
+            <a href="https://www.britishlegion.org.uk/get-involved/things-to-do/fundraise-for-us/poppy-golf" class="fundPageHyperlink">
+            <img src="elements/Royal British Legion Items/fundraise/golf.PNG" alt="Poppy Golf" width="608" height="300">
+            <figcaption class="fundRowsTitles">Royal British Legion | Golf</figcaption>
+            </a>
+        </div>
+    </div>
+    <div class="column rspca">
+        <div class="contentFund">
+            <a href="https://www.rspca.org.uk/getinvolved/fundraise/cycling/brightonride" class="fundPageHyperlink">
+            <img src="elements/RSPCA Items/fundraise/Brighton Marathon Ride.jpg" alt="Brighton Marathon Ride" width="608" height="300">
+            <figcaption class="fundRowsTitles">RSPCA | Brighton Marathon Ride</figcaption>
+            </a>
+        </div>
+    </div>
+</div>
+<div class="rowFund">
+    <div class="column unicef">
+        <div class="contentFund">
+            <a href="https://www.unicef.org/world-childrens-day" class="fundPageHyperlink">
+            <img src="elements/Unicef Items/fundraise/world children day.png" alt="World Children Day" width="608" height="300">
+            <figcaption class="fundRowsTitles">Unicef | World Children's Day</figcaption>
+            </a>
+        </div>
+    </div>
+    <div class="column woodlandtrust">
+        <div class="contentFund">
+            <a href="https://www.woodlandtrust.org.uk/support-us/give/fundraising/workplace-fundraising/" class="fundPageHyperlink">
+            <img src="elements/Woodland Trust Items/fundraise/Fundraise at the workplace.PNG" alt="Fundraise at the workplace" width="608" height="300">
+            <figcaption class="fundRowsTitles">Woodland Trust | Workplace Fundraise</figcaption>
+            </a>
+        </div>
+    </div>
+    <div class="column wwf">
+        <div class="contentFund">
+            <a href="https://www.wwf.org.uk/manchestermarathon" class="fundPageHyperlink">
+            <img src="elements/WWF/fundraise/ManchesterMarathon.PNG" alt="Manchester Marathon" width="608" height="300">
+            <figcaption class="fundRowsTitles">World Wildlife Fund | Manchester Marathon</figcaption>
+            </a>
+        </div>
+    </div>
+</div>
+
+<!--Fundraiser Images and Text-->
+<div class="rowFundMobile">
+    <div class="column alzheimersscotland">
+        <div class="contentFund">
+            <a href="https://www.alzscot.org/memorywalk" class="fundPageHyperlink">
+                <img src="elements/AlzheimersScotland Items/fundraise/scotland memory walk.png" alt="Memory Walk" width="608" height="300">
+                <figcaption class="fundRowsTitles">Alzheimers Scotland | Scotland's Memory Walk</figcaption>
+                </a>
+        </div>
+    </div>
+    <div class="column bhf">
+        <div class="contentFund">
+            <a href="https://www.bhf.org.uk/how-you-can-help/events/runs/kew-the-run" class="fundPageHyperlink">
+                <img src="elements/BHF Fundraiser/KewGardens10KHalfMarathon.png" alt="Kew Garden Marathon" width="608" height="300">
+                <figcaption class="fundRowsTitles">British Heart Foundation | Kew Gardens</figcaption>
+                </a>
+        </div>
+    </div>
+    <div class="column brc">
+        <div class="contentFund">
+            <a href="https://www.redcross.org.uk/get-involved/fundraising-and-events/10bay-challenge" class="fundPageHyperlink">
+                <img src="elements/BRC Fundraiser/10Bay Challenge Run.PNG" alt="Bay Run Challenge" width="608" height="300">
+                <figcaption class="fundRowsTitles">British Red Cross | 10Bay Run Challenge</figcaption>
+                </a>
+        </div>
+    </div>
+    <div class="column cancerresearchuk">
+        <div class="contentFund">
+            <a href="https://activities.cancerresearchuk.org/do-your-own-fundraising" class="fundPageHyperlink">
+                <img src="elements/Cancer Research Items/fundraiser/fundraise pack.png" alt="Fundraise Pack" width="608" height="300">
+                <figcaption class="fundRowsTitles">Cancer Research UK | Fundraise Pack</figcaption>
+                </a>
+        </div>
+    </div>
+    <div class="column childreninneed">
+        <div class="contentFund">
+            <a href="https://www.bbcchildreninneed.co.uk/shows/countryfile-ramble/" class="fundPageHyperlink">
+                <img src="elements/Children In Need Items/fundraise/Countryfile Ramble.jpg" alt="Countryfile Ramble" width="608" height="300">
+                <figcaption class="fundRowsTitles">Children in Need | Countryfile Ramble</figcaption>
+                </a>
+        </div>
+    </div>
+    <div class="column goshfc">
+        <div class="contentFund">
+            <a href="https://www.gosh.org/get-involved/fundraising-events/london-triathlon/?gclsrc=aw.ds" class="fundPageHyperlink">
+                <img src="elements/GOSHFC Fundraiser/LondonTriathlon.jpg" alt="London Triathlon" width="608" height="300">
+                <figcaption class="fundRowsTitles">GOSHFC | London Triathlon</figcaption>
+                </a>
+        </div>
+    </div>
+    <div class="column guidedogs">
+        <div class="contentFund">
+            <a href="https://www.guidedogs.org.uk/how-you-can-help/fundraise/name-a-puppy/" class="fundPageHyperlink">
+                <img src="elements/Guide Dogs Items/fundraise/name a puppy.jpg" alt="Name a Puppy" width="608" height="300">
+                <figcaption class="fundRowsTitles">Guide Dogs | Name a Puppy</figcaption>
+                </a>
+        </div>
+    </div>
+    <div class="column hfh">
+        <div class="contentFund">
+            <a href="https://www.helpforheroes.org.uk/give-support/fundraising-events/skydive-for-heroes/" class="fundPageHyperlink">
+                <img src="elements/Help for Heroes Fundraiser/skydiveForHeroes.jpg" alt="Skydive for heroes" width="608" height="300">
+                <figcaption class="fundRowsTitles">Help for Heroes | Skydiving</figcaption>
+                </a>
+        </div>
+    </div>
+    <div class="column macmillan">
+        <div class="contentFund">
+            <a href="https://www.macmillan.org.uk/fundraise/charity-cycle-rides/etape-loch-ness" class="fundPageHyperlink">
+                <img src="elements/MacMillan Fundraiser/EtapeLochNessCycle.jpg" alt="Etape Loch Ness Cycle" width="608" height="300">
+                <figcaption class="fundRowsTitles">MacMillan | Etape Loch Ness Cycle</figcaption>
+                </a>
+        </div>
+    </div>
+    <div class="column oxfam">
+        <div class="contentFund">
+            <a href="https://www.oxfam.org.uk/get-involved/fundraise-with-oxfam/fundraising-events/london-marathon/" class="fundPageHyperlink">
+                <img src="elements/Oxfam Fundraiser/LondonMarathon.jpg" alt="London Marathon" width="608" height="300">
+                <figcaption class="fundRowsTitles">Oxfam | London Marathon</figcaption>
+                </a>
+        </div>
+    </div>
+    <div class="column rbl">
+        <div class="contentFund">
+            <a href="https://www.britishlegion.org.uk/get-involved/things-to-do/fundraise-for-us/poppy-golf" class="fundPageHyperlink">
+                <img src="elements/Royal British Legion Items/fundraise/golf.PNG" alt="Poppy Golf" width="608" height="300">
+                <figcaption class="fundRowsTitles">Royal British Legion | Golf</figcaption>
+                </a>
+        </div>
+    </div>
+    <div class="column rspca">
+        <div class="contentFund">
+            <a href="https://www.rspca.org.uk/getinvolved/fundraise/cycling/brightonride" class="fundPageHyperlink">
+                <img src="elements/RSPCA Items/fundraise/Brighton Marathon Ride.jpg" alt="Brighton Marathon Ride" width="608" height="300">
+                <figcaption class="fundRowsTitles">RSPCA | Brighton Marathon Ride</figcaption>
+                </a>
+        </div>
+    </div>
+    <div class="column unicef">
+        <div class="contentFund">
+            <a href="https://www.unicef.org/world-childrens-day" class="fundPageHyperlink">
+                <img src="elements/Unicef Items/fundraise/world children day.png" alt="World Children Day" width="608" height="300">
+                <figcaption class="fundRowsTitles">Unicef | World Children's Day</figcaption>
+                </a>
+        </div>
+    </div>
+    <div class="column woodlandtrust">
+        <div class="contentFund">
+            <a href="https://www.woodlandtrust.org.uk/support-us/give/fundraising/workplace-fundraising/" class="fundPageHyperlink">
+                <img src="elements/Woodland Trust Items/fundraise/Fundraise at the workplace.PNG" alt="Fundraise at the workplace" width="608" height="300">
+                <figcaption class="fundRowsTitles">Woodland Trust | Workplace Fundraise</figcaption>
+                </a>
+        </div>
+    </div>
+    <div class="column wwf">
+        <div class="contentFund">
+            <a href="https://www.wwf.org.uk/manchestermarathon" class="fundPageHyperlink">
+                <img src="elements/WWF/fundraise/ManchesterMarathon.PNG" alt="Manchester Marathon" width="608" height="300">
+                <figcaption class="fundRowsTitles">World Wildlife Fund | Manchester Marathon</figcaption>
+                </a>
+        </div>
+    </div>
+</div>
+</section>
+
+<!---Footer Section--->
+<div class="footerSection">
+    <div class="footerContent">
+        <div class="fContactHeader">Contact Us</div>
+        <div class="fContactContent">Email: www.SearchRelief@live.co.uk</div>
+        <div class="fContactContent">Phone: ********</div>
+        <div class="fContactContent">Address: 308 Negra Arroyo Lane, Albuquerque, New Mexico</div>
+    </div>
+    <div class="footerContent">
+        <div class="fContactHeader">Partnered Charities</div>
+        <div class="fImageContent">
+            <div class="footerImages">
+                <a href="https://www.bhf.org.uk/" class="footerHyperlink">
+                <img src="elements/BHF Clothing/BHFLogo.png" alt="BHF Logo" width="80" height="80">
+                </a>
+                <a href="https://www.cancerresearchuk.org/" class="footerHyperlink">
+                <img src="elements/Cancer Research Items/Cancer-ResearchLogo.png" alt="Cancer Research Logo" width="80" height="80">
+                </a>
+                <a href="https://www.guidedogs.org.uk/" class="footerHyperlink">
+                <img src="elements/Guide Dogs Items/guidedogsLogo.png" alt="Guide Dogs Logo" width="80" height="80">
+                </a>
+                <a href="https://www.gosh.org/" class="footerHyperlink">
+                <img src="elements/GOSHFC Items/GOSHFCLogo.png" alt="GOSHFC Logo" width="80" height="80">
+                </a>
+                <a href="https://www.macmillan.org.uk/" class="footerHyperlink">
+                <img src="elements/MacMillan Items/macmillanLogo.png" alt="MacMillan Logo" width="80" height="80">
+                </a>
+            </div>
+            <div class="footerImages">
+                <a href="https://www.helpforheroes.org.uk/" class="footerHyperlink">
+                <img src="elements/Help for Heroes Items/HelpforHeroes_logo.png" alt="Help for Heroes Logo" width="80" height="80">
+                </a>
+                <a href="https://www.wwf.org.uk/" class="footerHyperlink">
+                <img src="elements/WWF/WWFLogo.jpg" alt="WWF Logo" width="80" height="80">
+                </a>
+                <a href="https://www.oxfam.org.uk/" class="footerHyperlink">
+                <img src="elements/Oxfam Items/OxfamLogo2.PNG" alt="Oxfam Logo" width="80" height="80">
+                </a>
+                <a href="https://www.redcross.org.uk/" class="footerHyperlink">
+                <img src="elements/BRC Items/BritishRedCrossLogo.png" alt="BRC Logo" width="80" height="80">
+                </a>
+                <a href="https://www.alzscot.org/" class="footerHyperlink">
+                <img src="elements/AlzheimersScotland Items/AlzheimersScotlandLogo.PNG" alt="Alzheimers Scotland Logo" width="80" height="80">
+                </a>
+            </div>
+            <div class="footerImages">
+                <a href="https://www.rspca.org.uk/" class="footerHyperlink">
+                <img src="elements/RSPCA Items/RSPCALogo.jpg" alt="RSPCA Logo" width="80" height="80">
+                </a>
+                <a href="https://www.britishlegion.org.uk/" class="footerHyperlink">
+                <img src="elements/Royal British Legion Items/RoyalBritishLegionLogo.jpg" alt="Royal British Legion Logo" width="80" height="80">
+                </a>
+                <a href="https://www.unicef.org/" class="footerHyperlink">
+                <img src="elements/Unicef Items/UnicefLogo.PNG" alt="Unicef Logo" width="80" height="80">
+                </a>
+                <a href="https://www.bbcchildreninneed.co.uk/" class="footerHyperlink">
+                <img src="elements/Children In Need Items/ChildrenInNeedLogo.jpg" alt="Children in Need Logo" width="80" height="80">
+                </a>
+                <a href="https://www.woodlandtrust.org.uk/" class="footerHyperlink">
+                <img src="elements/Woodland Trust Items/WoodlandTrustLogo.jpg" alt="Woodland Trust Logo" width="80" height="80">
+                </a>
+            </div>
+            </div>
+            <div class="fImageContentMobile">
+                <div class="footerImages">
+                    <a href="https://www.bhf.org.uk/" class="footerHyperlink">
+                    <img src="elements/BHF Clothing/BHFLogo.png" alt="BHF Logo">
+                    </a>
+                    <a href="https://www.cancerresearchuk.org/" class="footerHyperlink">
+                    <img src="elements/Cancer Research Items/Cancer-ResearchLogo.png" alt="Cancer Research Logo">
+                    </a>
+                    <a href="https://www.guidedogs.org.uk/" class="footerHyperlink">
+                    <img src="elements/Guide Dogs Items/guidedogsLogo.png" alt="Guide Dogs Logo">
+                    </a>
+                    <a href="https://www.gosh.org/" class="footerHyperlink">
+                    <img src="elements/GOSHFC Items/GOSHFCLogo.png" alt="GOSHFC Logo">
+                    </a>
+                    <a href="https://www.macmillan.org.uk/" class="footerHyperlink">
+                    <img src="elements/MacMillan Items/macmillanLogo.png" alt="MacMillan Logo">
+                    </a>
+                </div>
+                <div class="footerImages">
+                    <a href="https://www.helpforheroes.org.uk/" class="footerHyperlink">
+                    <img src="elements/Help for Heroes Items/HelpforHeroes_logo.png" alt="Help for Heroes Logo">
+                    </a>
+                    <a href="https://www.wwf.org.uk/" class="footerHyperlink">
+                    <img src="elements/WWF/WWFLogo.jpg" alt="WWF Logo">
+                    </a>
+                    <a href="https://www.oxfam.org.uk/" class="footerHyperlink">
+                    <img src="elements/Oxfam Items/OxfamLogo2.PNG" alt="Oxfam Logo">
+                    </a>
+                    <a href="https://www.redcross.org.uk/" class="footerHyperlink">
+                    <img src="elements/BRC Items/BritishRedCrossLogo.png" alt="BRC Logo">
+                    </a>
+                    <a href="https://www.alzscot.org/" class="footerHyperlink">
+                    <img src="elements/AlzheimersScotland Items/AlzheimersScotlandLogo.PNG" alt="Alzheimers Scotland Logo">
+                    </a>
+                </div>
+                <div class="footerImages">
+                    <a href="https://www.rspca.org.uk/" class="footerHyperlink">
+                    <img src="elements/RSPCA Items/RSPCALogo.jpg" alt="RSPCA Logo">
+                    </a>
+                    <a href="https://www.britishlegion.org.uk/" class="footerHyperlink">
+                    <img src="elements/Royal British Legion Items/RoyalBritishLegionLogo.jpg" alt="Royal British Legion Logo">
+                    </a>
+                    <a href="https://www.unicef.org/" class="footerHyperlink">
+                    <img src="elements/Unicef Items/UnicefLogo.PNG" alt="Unicef Logo">
+                    </a>
+                    <a href="https://www.bbcchildreninneed.co.uk/" class="footerHyperlink">
+                    <img src="elements/Children In Need Items/ChildrenInNeedLogo.jpg" alt="Children in Need Logo">
+                    </a>
+                    <a href="https://www.woodlandtrust.org.uk/" class="footerHyperlink">
+                    <img src="elements/Woodland Trust Items/WoodlandTrustLogo.jpg" alt="Woodland Trust Logo">
+                    </a>
+                </div>
+                </div>
+    </div>
+    <div class="footerContent">
+        <div class="fContactHeader">Website Information</div>
+        <div class="fContactContent">2023, Search Relief Charity Aggregator</div>
+        <div class="fContactContent">Website By Oscar Ruano</div>
+        <div class="fContactContent">Email: ruano026@hotmail.co.uk</div>
+    </div>
+</div>
+
+    </div>
+</main>
+
+</body>
+</html>
